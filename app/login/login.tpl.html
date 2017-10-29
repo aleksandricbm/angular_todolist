@@ -1,0 +1,10 @@
+<form class="form-signin" ng-submit="submitLogin(loginForm)" role="form" ng-init="loginForm = {}">
+  <h2 class="form-signin-heading">Sign in</h2>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" name="email" id="email" ng-model="loginForm.email" required="required" class="form-control" placeholder="Email address" autofocus="">
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" name="password" id="password" ng-model="loginForm.password" required="required" class="form-control" placeholder="Password">
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <br><span>Don't have an account? <a href="#!/register">Sign Up</a></span>
+</form>
+

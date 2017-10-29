@@ -1,0 +1,32 @@
+<div class='proj-container'>
+  <h2>Projects</h2>
+  <div id="accordion" class="accordion">
+    <div class="card m-b-0">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#projid{{ project.id }}" ng-repeat-start="project in projects" ng-click="getTasksList( project.id )">
+            <a class="card-title">
+                {{ project.name }}
+            </a>
+        </div>
+        <div id="projid{{ project.id }}" class="card-block collapse" ng-repeat-end="">
+          <p ng-repeat="task in tasks">{{ task.name + task.id}} </p>
+          <div>
+            <input type="text" name="tasknew" id="tasknew" required="required" class="form-control" placeholder="Enter Task Name ..." ng-click="showbtn=true" ng-model="tasknew">
+            <br>
+            <div class="btn-group" role="group">
+              <button class="btn btn-lg btn-primary" type="submit" ng-show="showbtn" ng-click="createTask(tasknew,project.id)">Add Task</button>
+              <button class="btn btn-lg btn-secondary" type="button" ng-show="showbtn" ng-click="showbtn=false">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div>
+    <input type="text" name="projectnew" id="projectnew" required="required" class="form-control" placeholder="Enter Project Name ..." ng-click="showbtn=true" ng-model="projectnew">
+    <br>
+    <div class="btn-group" role="group">
+      <button class="btn btn-lg btn-primary" type="submit" ng-show="showbtn" ng-click="create(projectnew)">Create Project</button>
+      <button class="btn btn-lg btn-secondary" type="button" ng-show="showbtn" ng-click="showbtn=false">Cancel</button>
+    </div>
+  </div>
+</div>
