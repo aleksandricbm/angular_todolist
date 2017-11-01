@@ -5,19 +5,21 @@ import ngCookies from 'angular-cookie';
 import ngtokenauth from 'ng-token-auth';
 import LoginCtrl from './login/login.controller';
 import RegisterCtrl from './register/register.controller';
-import ProjectsCtrl from './projects/projects.controller';
+import ProjectsModule from './projects/projects.module';
+import TasksModule from './tasks/tasks.module';
 import routes from './app.routes';
 angular.module('app', [
 	uirouter,
   ngAnimate,
   ngCookies,
-  ngtokenauth
+  ngtokenauth,
+  ProjectsModule.name,
+  TasksModule.name
   ])
 
   /** @ngInject */
   .controller('LoginCtrl', LoginCtrl)
   .controller('RegisterCtrl', RegisterCtrl)
-  .controller('ProjectsCtrl', ProjectsCtrl)
   .config(routes)
 	.config(function($authProvider) {
     $authProvider.configure({
@@ -61,7 +63,6 @@ angular.module('app', [
         return window.open(url, '_blank', 'closebuttoncaption=Cancel');
       },
       parseExpiry: function(headers) {
-        // convert from UTC ruby (seconds) to UTC js (milliseconds)
         return (parseInt(headers['expiry']) * 1000) || null;
       },
       handleLoginResponse: function(response) {

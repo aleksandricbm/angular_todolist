@@ -1,0 +1,9 @@
+<p ng-repeat="task in tasks">{{ task.name + task.id}} </p>
+<div>
+  <input type="text" name="tasknew" id="tasknew" required="required" class="form-control" placeholder="Enter Task Name ..." ng-click="showbtn=true" ng-model="tasknew">
+  <br>
+  <div class="btn-group" role="group">
+    <button class="btn btn-lg btn-primary" type="submit" ng-show="showbtn" ng-click="createTask(tasknew,project.id)">Add Task</button>
+    <button class="btn btn-lg btn-secondary" type="button" ng-show="showbtn" ng-click="showbtn=false">Cancel</button>
+  </div>
+</div>

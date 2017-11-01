@@ -1,23 +1,16 @@
 export default class ProjectsCtrl{
-  constructor($scope, $http){
-    $scope.projects = [];
-    $scope.tasks = [];
-
-    function getListProjects()
-    {
-      $http.get('/api/projects')
-        .then(function(response){
-          $scope.projects = response.data
-        });
-    }
-
-    $scope.create = function(projname) {
-        $http.post
-        ('/api/projects', JSON.stringify({ name: projname }))
-            .then(function(response) {
-              $scope.projects.push (response.data);
-            });
-      };
+  constructor($scope, $http, ProjectsService){
+    this.projects = [];
+    console.log('constructor ProjectsCtrl');
+    // this.tasks = [];
+  //   this.projects['aa']=[
+  //   [1,6,3],
+  //   [5,2,7],
+  //   [9,10,11],
+  // ];
+  //   console.log('start=' + this.projects['aa']);
+    this.service = ProjectsService;
+    this.$scope = $scope;
     $scope.createTask = function(task, proj) {
         $http.post
         ('/api/tasks', JSON.stringify({ project: proj, name: task }))
@@ -25,13 +18,25 @@ export default class ProjectsCtrl{
               $scope.projects.push (response.data);
             });
       };
-    $scope.getTasksList = function(proj) {
-      $http.get('/api/tasks', { params: { project: proj }})
-        .then(function(response){
-          $scope.tasks = response.data
-        });
-    };
 
-    getListProjects();
   }
+  createProject(projname){
+    this.service.createProjectAPI(projname)
+      .then(function(response) {
+        this.projects.push (response.data);
+      }.bind(this));
+  }
+
+  getListProjects(){
+    this.service.getListProjectsAPI()
+      .then(function(response){
+        this.projects = response.data;
+      }.bind(this));
+  }
+  // getTasksList(proj){
+  //   this.service.getTasksListAPI(proj)
+  //     .then(function(response){
+  //       this.tasks = response.data;
+  //     }.bind(this));
+  // }
 }

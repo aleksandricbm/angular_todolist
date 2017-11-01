@@ -1,0 +1,15 @@
+<div id="accordion" class="accordion" ng-controller="ProjectsCtrl as prjCtrl" ng-init="prjCtrl.getListProjects()">
+  <div class="card m-b-0" ng-controller="TasksCtrl as tskCtrl">
+    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#projid{{ project.id }}" ng-repeat-start="project in prjCtrl.projects" ng-click="tskCtrl.getTasksList(project.id)">
+        <a style="padding-left: 10px">{{ project.name }}</a>
+        <div class="panel_edit">
+              <i class="fa fa-pencil" aria-hidden="true" ng-click=""></i>
+              <i class="fa fa-trash" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div id="projid{{ project.id }}" class="card-block collapse" ng-repeat-end="">
+
+      <tasks-list tasks="tskCtrl.tasks[project.id]"></tasks-list>
+    </div>
+  </div>
+</div>

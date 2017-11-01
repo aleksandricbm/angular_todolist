@@ -74,12 +74,6 @@ angular-cookie@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/angular-cookie/-/angular-cookie-4.1.0.tgz#6dfc5e1873837e249596e5c04d5a1abd85b0a6a5"
 
-angular-font-awesome@^2.3.7:
-  version "2.3.7"
-  resolved "https://registry.yarnpkg.com/angular-font-awesome/-/angular-font-awesome-2.3.7.tgz#c02e82fd6307f86667bbf1780bd7849d0bde836e"
-  dependencies:
-    font-awesome "^4.7.0"
-
 angular-ui-router@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-0.4.3.tgz#6c29546fe50b8d2f74614dcb8660d6fc40d6e167"
@@ -1948,10 +1942,6 @@ find-up@^2.0.0, find-up@^2.1.0:
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
   dependencies:
     locate-path "^2.0.0"
-
-font-awesome@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^1.0.1:
   version "1.0.2"
