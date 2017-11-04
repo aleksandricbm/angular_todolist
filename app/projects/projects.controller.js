@@ -1,29 +1,41 @@
 export default class ProjectsCtrl{
   constructor($scope, $http, ProjectsService){
     this.projects = [];
-    console.log('constructor ProjectsCtrl');
-    // this.tasks = [];
-  //   this.projects['aa']=[
-  //   [1,6,3],
-  //   [5,2,7],
-  //   [9,10,11],
-  // ];
-  //   console.log('start=' + this.projects['aa']);
+    this.projects_copy = [];
     this.service = ProjectsService;
     this.$scope = $scope;
-    $scope.createTask = function(task, proj) {
-        $http.post
-        ('/api/tasks', JSON.stringify({ project: proj, name: task }))
-            .then(function(response) {
-              $scope.projects.push (response.data);
-            });
-      };
-
+    console.log('constructor ProjectsCtrl');
   }
+
   createProject(projname){
     this.service.createProjectAPI(projname)
       .then(function(response) {
         this.projects.push (response.data);
+      }.bind(this));
+  }
+
+  edit(proj){
+    var index = this.projects.indexOf(proj);
+    this.projects_copy[index] = angular.copy(this.projects[index])
+  }
+
+  cancel(proj){
+    var index = this.projects.indexOf(proj);
+    this.projects[index] = angular.copy(this.projects_copy[index])
+  }
+
+  editProject(proj){
+    this.service.editProjectAPI(proj)
+      .then(function(response) {
+      }.bind(this));
+  }
+
+  deleteProject(projid){
+    this.service.deleteProjectAPI(projid)
+      .then(function(response) {
+        this.projects = this.projects.filter(function( obj ) {
+            return obj.id !== projid;
+        });
       }.bind(this));
   }
 
@@ -33,10 +45,4 @@ export default class ProjectsCtrl{
         this.projects = response.data;
       }.bind(this));
   }
-  // getTasksList(proj){
-  //   this.service.getTasksListAPI(proj)
-  //     .then(function(response){
-  //       this.tasks = response.data;
-  //     }.bind(this));
-  // }
 }

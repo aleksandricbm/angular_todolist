@@ -4,14 +4,18 @@ export default class ProjectsService{
   }
 
   createProjectAPI(proj){
-    return this.$http.post('/api/projects', JSON.stringify({ name: proj }));
+    return this.$http.post('/api/projects', {params: { name: proj }});
   }
 
   getListProjectsAPI() {
     return this.$http.get('/api/projects');
   }
 
-  // getTasksListAPI(proj) {
-  //   return this.$http.get('/api/tasks', { params: { project: proj }})
-  // }
+  editProjectAPI(proj) {
+    return this.$http.patch('/api/projects', { params: {name: proj.name, id: proj.id }});
+  }
+
+  deleteProjectAPI(proj) {
+    return this.$http.delete('/api/projects', {params: { name: proj }});
+  }
 }

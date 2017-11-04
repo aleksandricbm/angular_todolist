@@ -3,8 +3,12 @@ export default class TasksDirective {
     this.templateUrl = 'app/tasks/taskslist.tpl.html';
     this.restrict = 'EA';
     this.scope = {
-        tasks: '='
+        // tasks: '='
+        projid: '='
     };
+    this.transclude = true;
+    this.controller = 'TasksCtrl';
+    this.controllerAs = 'tsk';
   this.link = function(scope) {
       console.log("directive Tasks");
     };

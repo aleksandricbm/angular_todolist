@@ -1,15 +1,35 @@
 <div id="accordion" class="accordion" ng-controller="ProjectsCtrl as prjCtrl" ng-init="prjCtrl.getListProjects()">
   <div class="card m-b-0" ng-controller="TasksCtrl as tskCtrl">
-    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#projid{{ project.id }}" ng-repeat-start="project in prjCtrl.projects" ng-click="tskCtrl.getTasksList(project.id)">
-        <a style="padding-left: 10px">{{ project.name }}</a>
-        <div class="panel_edit">
-              <i class="fa fa-pencil" aria-hidden="true" ng-click=""></i>
-              <i class="fa fa-trash" aria-hidden="true"></i>
-        </div>
+    <div class="card-header" ng-repeat-start="project in prjCtrl.projects">
+      <span style="padding-left: 10px" data-toggle="collapse" data-parent="#accordion" href="#projid{{ project.id }}" ng-click="showTasks=true" ng-hide="showedtprj">{{ project.name }}</span>
+
+      <div class="btn-group" role="group" ng-show="showedtprj">
+        <input type="text" ng-model=project.name required="required" class="form-control form-control input-sm" value="{{project.name}}">
+        <button class="btn btn-sm btn-primary" type="submit" ng-click="prjCtrl.editProject(project);showedtprj=false">Save</button>
+        <button class="btn btn-sm btn-secondary" type="button" ng-click="prjCtrl.cancel(project);showedtprj=false" ng-discard>Cancel</button>
+      </div>
+
+      <div class="panel_edit" style="z-index:999">
+        <span  ng-click="prjCtrl.edit(project);showedtprj=true">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+        </span>
+        <span  ng-click="prjCtrl.deleteProject(project.id)">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </span>
+      </div>
     </div>
     <div id="projid{{ project.id }}" class="card-block collapse" ng-repeat-end="">
 
-      <tasks-list tasks="tskCtrl.tasks[project.id]"></tasks-list>
+      <!-- <tasks-list tasks="tskCtrl.tasks[project.id]"></tasks-list> -->
+      <tasks-list ng-if="showTasks==true" projid="project.id"></tasks-list>
+    </div>
+  </div>
+  <div>
+    <input type="text" name="projectnew" id="projectnew" required="required" class="form-control" placeholder="Enter Project Name ..." ng-click="showbtn=true" ng-model="projectnew">
+    <br>
+    <div class="btn-group" role="group">
+      <button class="btn btn-lg btn-primary" type="submit" ng-show="showbtn" ng-click="prjCtrl.createProject(projectnew)">Create Project</button>
+      <button class="btn btn-lg btn-secondary" type="button" ng-show="showbtn" ng-click="showbtn=false">Cancel</button>
     </div>
   </div>
 </div>
