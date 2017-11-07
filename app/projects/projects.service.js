@@ -12,10 +12,10 @@ export default class ProjectsService{
   }
 
   editProjectAPI(proj) {
-    return this.$http.patch('/api/projects', { params: {name: proj.name, id: proj.id }});
+    return this.$http.patch('/api/projects/' + proj.id, {name: proj.name});
   }
 
   deleteProjectAPI(proj) {
-    return this.$http.delete('/api/projects', {params: { name: proj }});
+    return this.$http.delete('/api/projects/' + proj);
   }
 }

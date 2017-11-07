@@ -3028,6 +3028,10 @@ ng-animate@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/ng-animate/-/ng-animate-0.3.0.tgz#5fdcbe2c431f7f331179cba02000cc0100e2948e"
 
+ng-file-upload@^12.2.13:
+  version "12.2.13"
+  resolved "https://registry.yarnpkg.com/ng-file-upload/-/ng-file-upload-12.2.13.tgz#01800f3872e526f95310f8477e99e4f12d0d8d14"
+
 ng-token-auth@^0.0.30:
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/ng-token-auth/-/ng-token-auth-0.0.30.tgz#ebecd57b9164dad932df09bc6a1136037e3c31a2"

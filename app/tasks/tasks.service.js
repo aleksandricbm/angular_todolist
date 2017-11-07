@@ -4,27 +4,27 @@ export default class TasksService{
   }
 
   getTasksListAPI(proj) {
-    return this.$http.get('/api/tasks', { params: { project: proj }})
+    return this.$http.get('/api/tasks', { params: { project_id: proj }})
   }
 
   createTaskAPI(task, proj){
-    return this.$http.post('/api/tasks', { params: {name: task, project: proj }});
+    return this.$http.post('/api/tasks', {name: task, project_id: proj });
   }
 
   movePositionAPI(projid, obj){
-    return this.$http.put('/api/tasks/sort', { proj_id: projid, params: obj });
+    return this.$http.put('/api/tasks/sort', { project_id: projid, params: obj });
   }
 
-  changeTaskStatusAPI(projid, task, status){
+  changeTaskStatusAPI(projid, task){
     return this.$http.put('/api/tasks/'+ task +'/completed',
-      { proj_id: projid, status: status });
+      { project_id: projid });
   }
 
-  editTaskAPI(proj) {
-    return this.$http.patch('/api/projects', { params: {name: proj.name, id: proj.id }});
+  editTaskAPI(task) {
+    return this.$http.patch('/api/tasks/' + task.id, { name: task.name, project_id: task.project_id });
   }
 
-  deleteTaskAPI(taskid) {
-    return this.$http.delete('/api/tasks/' + taskid);
+  deleteTaskAPI(taskid, projid) {
+    return this.$http.delete('/api/tasks/' + taskid, { params: {project_id: projid}});
   }
 }

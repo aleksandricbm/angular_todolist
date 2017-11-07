@@ -1,7 +1,7 @@
 routes.$inject = ['$stateProvider','$urlRouterProvider'];
 export default function routes($stateProvider, $urlRouterProvider) {
   $stateProvider
-    .state('tasks', {
+    .state('comments', {
       resolve: {
         auth: function ($auth, $state) {
             return $auth.validateUser().catch(function(err){
@@ -9,7 +9,7 @@ export default function routes($stateProvider, $urlRouterProvider) {
               });
           }
         },
-      controller: 'TasksCtrl',
-      controllerAs: 'tskCtrl'
+      controller: 'CommentsCtrl',
+      controllerAs: 'comctrl'
     })
   };

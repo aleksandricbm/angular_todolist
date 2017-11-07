@@ -3,18 +3,22 @@ import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookie';
 import ngtokenauth from 'ng-token-auth';
+import ngFileUpload from 'ng-file-upload';
 import LoginCtrl from './login/login.controller';
 import RegisterCtrl from './register/register.controller';
 import ProjectsModule from './projects/projects.module';
 import TasksModule from './tasks/tasks.module';
+import CommentsModule from './comments/comments.module';
 import routes from './app.routes';
 angular.module('app', [
 	uirouter,
   ngAnimate,
   ngCookies,
   ngtokenauth,
+  ngFileUpload,
   ProjectsModule.name,
-  TasksModule.name
+  TasksModule.name,
+  CommentsModule.name
   ])
 
   /** @ngInject */

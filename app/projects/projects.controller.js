@@ -3,6 +3,7 @@ export default class ProjectsCtrl{
     this.projects = [];
     this.projects_copy = [];
     this.service = ProjectsService;
+    this.showProjectList = [];
     this.$scope = $scope;
     console.log('constructor ProjectsCtrl');
   }
@@ -44,5 +45,15 @@ export default class ProjectsCtrl{
       .then(function(response){
         this.projects = response.data;
       }.bind(this));
+  }
+
+  showTaskList(projid){
+    if (this.showProjectList.length>0)
+    {
+      this.showProjectList = this.showProjectList.filter(function( obj ) {
+            return obj !== true;
+        });
+    }
+    this.showProjectList[projid] = !this.showProjectList[projid];
   }
 }

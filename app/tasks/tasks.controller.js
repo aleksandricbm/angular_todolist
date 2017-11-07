@@ -47,8 +47,8 @@ export default class TasksCtrl{
     }
   }
 
-  finished(projid, task, status){
-    this.service.changeTaskStatusAPI(projid, task, status)
+  finished(projid, task){
+    this.service.changeTaskStatusAPI(projid, task)
       .then(function(response){
         // this.tasks = response.data;
       }.bind(this));
@@ -70,11 +70,11 @@ export default class TasksCtrl{
       }.bind(this));
   }
 
-  deleteTask(task){
-    this.service.deleteTaskAPI(task.id)
+  deleteTask(task, projid){
+    this.service.deleteTaskAPI(task.id, projid)
       .then(function(response) {
         this.tasks = this.tasks.filter(function( obj ) {
-            return obj.id !== task;
+            return obj.id !== task.id;
         });
       }.bind(this));
   }
