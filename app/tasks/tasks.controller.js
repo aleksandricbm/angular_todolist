@@ -4,6 +4,9 @@ export default class TasksCtrl{
     this.service = TasksService;
     this.$scope = $scope;
     console.log('constructor TASKS');
+
+    this.$scope.title = "Angularjs Bootstrap Modal Directive Example";
+    this.$scope.showModal1 = false;
   }
 
   getTasksList(proj){
@@ -78,4 +81,23 @@ export default class TasksCtrl{
         });
       }.bind(this));
   }
+
+  hide(m) {
+    if(m === 1){
+        this.$scope.showModal1 = false;
+    }else{
+        this.$scope.showModal2 = false;
+      }
+  }
+
+  modalOneShown() {
+    console.log('model one shown');
+  }
+
+  modalOneHide() {
+    console.log('mo=='+this.$scope.showModal1);
+    this.$scope.showModal1 = false;
+    console.log('model one hidden');
+  }
+
 }

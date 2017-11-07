@@ -1,9 +1,8 @@
 <div id="accordion" class="accordion" ng-controller="ProjectsCtrl as prjCtrl" ng-init="prjCtrl.getListProjects()">
   <div class="card m-b-0" ng-controller="TasksCtrl as tskCtrl">
     <div class="card-header" ng-repeat-start="project in prjCtrl.projects">
-      <!-- <span style="padding-left: 10px" data-toggle="collapse" data-parent="#accordion" href="#projid{{ project.id }}" ng-click="isCollapsed = !isCollapsed" ng-hide="showedtprj">{{ project.name }}{{isCollapsed[project.id]}}</span> -->
 
-<span style="padding-left: 10px" data-toggle="collapse" data-parent="#accordion" href="#projid{{ project.id }}" ng-click="prjCtrl.showTaskList(project.id)" ng-hide="showedtprj">{{ project.name }}{{isCollapsed[project.id]}}</span>
+      <span style="padding-left: 10px" data-toggle="collapse" data-parent="#accordion" href="#projid{{ project.id }}" ng-click="prjCtrl.showTaskList(project.id)" ng-hide="showedtprj">{{ project.name }}{{isCollapsed[project.id]}}</span>
 
       <div class="btn-group" role="group" ng-show="showedtprj">
         <input type="text" ng-model=project.name required="required" class="form-control form-control input-sm" value="{{project.name}}">

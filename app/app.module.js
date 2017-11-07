@@ -1,21 +1,33 @@
+// import $ from 'jquery';
+// window.jQuery = $;
+// window.$ = $;
+// import bootstrap from 'bootstrap';
+// import 'jquery/dist/jquery.slim.min.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.min.js';
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookie';
 import ngtokenauth from 'ng-token-auth';
 import ngFileUpload from 'ng-file-upload';
+import angularBootstrapDatetimepicker from 'angular-bootstrap-datetimepicker';
 import LoginCtrl from './login/login.controller';
 import RegisterCtrl from './register/register.controller';
 import ProjectsModule from './projects/projects.module';
 import TasksModule from './tasks/tasks.module';
 import CommentsModule from './comments/comments.module';
 import routes from './app.routes';
+
+
 angular.module('app', [
 	uirouter,
+  // bootstrap,
   ngAnimate,
   ngCookies,
   ngtokenauth,
   ngFileUpload,
+  angularBootstrapDatetimepicker,
   ProjectsModule.name,
   TasksModule.name,
   CommentsModule.name

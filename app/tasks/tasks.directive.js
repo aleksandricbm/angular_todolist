@@ -9,7 +9,7 @@ export default class TasksDirective {
     this.transclude = true;
     this.controller = 'TasksCtrl';
     this.controllerAs = 'tsk';
-  this.link = function(scope) {
+    this.link = function(scope) {
       console.log("directive Tasks");
     };
   }

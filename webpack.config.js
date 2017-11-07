@@ -1,4 +1,5 @@
 const path = require('path');
+var webpack = require('webpack');
 module.exports = {
     entry: './app/app.module.js',
     output: {
@@ -10,7 +11,7 @@ module.exports = {
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
+            loader: 'babel-loader'
         },
         { test: /\.html$/, loader: "html" },
         { test: /\.css$/, loader: "style!css" }
@@ -25,5 +26,17 @@ module.exports = {
             }
     }
     },
+    // plugins:[
+    //     new webpack.ProvidePlugin({
+    //         jQuery: 'jquery',
+    //         $: 'jquery',
+    //         jquery: 'jquery',
+    //         Popper: ['popper.js', 'default'],
+    //         Util: "exports-loader?Util!bootstrap/js/dist/util",
+    //         Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
+    //         // bootstrap: 'bootstrap'
+    //         // angular: 'angular'
+    //     })
+    // ],
     devtool: "#inline-source-map"
 }

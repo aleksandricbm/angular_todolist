@@ -25,7 +25,7 @@
           <i class="fa fa-comment" aria-hidden="true" ng-click="showcomments=true"></i>
         </span>
         <span>
-          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <i class="fa fa-clock-o" aria-hidden="true" ng-click="tsk.showModal1 = true"></i>
         </span>
         <span>
           <i class="fa fa-pencil" aria-hidden="true" ng-click="showedttask=true"></i>
@@ -46,3 +46,12 @@
     </div>
   </div>
 </div>
+        <modal visible="tsk.showModal1" on-show="tsk.modalOneShown()" on-hide="tsk.modalOneHide()">
+            <modal-header title="Modal Titel 1"></modal-header>
+            <modal-body>
+                <h3>This is modal body {{tsk.showModal1}}</h3>
+            </modal-body>
+            <modal-footer>
+                <button class="btn btn-primary"  ng-click="tsk.hide(1)">Save</button>
+            </modal-footer>
+        </modal>

@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="comctrl.getListComments()">
   Open modal
 </button>
 <!-- The Modal -->
@@ -20,12 +20,7 @@
             <textarea class="form-control" ng-model="comctrl.form.comment" rows="3" placeholder="Enter Your Comment"></textarea>
           </div>
           <div class="form-group">
-<!--             <input type="file" ng-model="newCommentForm.file_upload" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"> -->
-          <!-- <input type="file" ngf-select ng-model="comctrl.form.file_upload" id="file_upload" name="file_upload" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100"> -->
-
-  <div ngf-select ng-model="comctrl.form.file_upload" name="file_upload" ngf-pattern="'image/*'"
-    ngf-accept="'image/*'" ngf-max-size="20MB">Select</div>
-
+            <i class="fa fa-paperclip fa-2x file_upload" aria-hidden="true" ngf-select ng-model="comctrl.form.file_upload" name="file_upload" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="20MB"></i>
           </div>
           <img class="home-icon-img" ngf-thumbnail="comctrl.form.file_upload">
           <div class="form-group">
@@ -36,10 +31,19 @@
       </div>
 
       <!-- Modal footer -->
-      <div class="modal-footer">
+      <div class="modal-footer" ng-repeat="comment in comctrl.comments">
 
+          <div class="header">
+            <span class="create_date">{{comment.created_at | date : 'MM/dd/yyyy'}}</span>
+            <i class="fa fa-trash" aria-hidden="true" ng-click="comctrl.deleteComment(comment)"></i>
+          </div>
+          <div class="body">
+            {{comment.comments}}
+          </div>
+          <div class="comment_file" ng-show="comment.file.url !== null">
+            <img class="home-icon-img" ngf-thumbnail="comment.file.url">
+          </div>
       </div>
-
     </div>
   </div>
 </div>

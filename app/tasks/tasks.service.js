@@ -8,7 +8,7 @@ export default class TasksService{
   }
 
   createTaskAPI(task, proj){
-    return this.$http.post('/api/tasks', {name: task, project_id: proj });
+    return this.$http.post('/api/tasks', { name: task, project_id: proj });
   }
 
   movePositionAPI(projid, obj){
@@ -25,6 +25,6 @@ export default class TasksService{
   }
 
   deleteTaskAPI(taskid, projid) {
-    return this.$http.delete('/api/tasks/' + taskid, { params: {project_id: projid}});
+    return this.$http.delete('/api/tasks/' + taskid, { params: { project_id: projid }});
   }
 }
