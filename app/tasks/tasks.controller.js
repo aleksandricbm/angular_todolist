@@ -1,12 +1,10 @@
 export default class TasksCtrl{
-  constructor($scope, $http, TasksService){
+  constructor($scope, $http, TasksService, $rootScope){
     this.tasks = [];
+    this.tasks_copy = [];
     this.service = TasksService;
     this.$scope = $scope;
-    console.log('constructor TASKS');
-
-    this.$scope.title = "Angularjs Bootstrap Modal Directive Example";
-    this.$scope.showModal1 = false;
+    this.showdatepicker = [];
   }
 
   getTasksList(proj){
@@ -26,7 +24,7 @@ export default class TasksCtrl{
   movePosition(projid, obj, position){
     var oldIndex = this.tasks.indexOf(obj);
     var arrayClone = [];
-    if (oldIndex > -1){
+    if (oldIndex > -1 && (oldIndex + position)>-1 && (oldIndex + position)<(this.tasks.length-1)){
       var newIndex = (oldIndex + position);
 
       if (newIndex < 0){
@@ -37,23 +35,18 @@ export default class TasksCtrl{
       arrayClone = this.tasks.slice();
       arrayClone[oldIndex]['position']=newIndex
       arrayClone.splice(oldIndex,1);
-      arrayClone[newIndex]['position']=oldIndex
       arrayClone.splice(newIndex,0,this.tasks[oldIndex]);
-
-      // console.log(arrayClone)
-      // this.tasks = arrayClone;
+      arrayClone[newIndex]['position']=oldIndex
       this.service.movePositionAPI(projid, arrayClone)
         .then(function(response){
           this.tasks = arrayClone;
         }.bind(this));
-
     }
   }
 
   finished(projid, task){
     this.service.changeTaskStatusAPI(projid, task)
       .then(function(response){
-        // this.tasks = response.data;
       }.bind(this));
   }
 
@@ -81,23 +74,4 @@ export default class TasksCtrl{
         });
       }.bind(this));
   }
-
-  hide(m) {
-    if(m === 1){
-        this.$scope.showModal1 = false;
-    }else{
-        this.$scope.showModal2 = false;
-      }
-  }
-
-  modalOneShown() {
-    console.log('model one shown');
-  }
-
-  modalOneHide() {
-    console.log('mo=='+this.$scope.showModal1);
-    this.$scope.showModal1 = false;
-    console.log('model one hidden');
-  }
-
 }

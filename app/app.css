@@ -121,3 +121,8 @@
 .comment_file > .home-icon-img {
 
 }
+
+
+.moment-picker {
+  z-index: 99999;
+}

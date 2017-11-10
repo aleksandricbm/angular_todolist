@@ -3,12 +3,14 @@ import uirouter from 'angular-ui-router';
 import TasksCtrl from './tasks.controller';
 import TasksRoutes from './tasks.routes';
 import TasksDirective from './tasks.directive'
-import ModalDirective from './modal.directive'
+import DatePickerDirective from '../component/date_picker.directive'
+import DatePickerCtrl from '../component/date_picker.controller'
 import TasksService from './tasks.service'
 
 export default angular.module('app.tasks',[uirouter])
   .controller('TasksCtrl', TasksCtrl)
+  .controller('DatePickerCtrl', DatePickerCtrl)
   .config(TasksRoutes)
   .directive('tasksList', [() => new TasksDirective()])
-  .directive('modal', [() => new ModalDirective()])
+  .directive('datePicker', [() => new DatePickerDirective()])
   .service('TasksService', TasksService)

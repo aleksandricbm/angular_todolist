@@ -21,7 +21,6 @@
     </div>
     <div id="projid{{ project.id }}" class="card-block collapse" ng-repeat-end="">
 
-      <!-- <tasks-list tasks="tskCtrl.tasks[project.id]"></tasks-list> -->
       <tasks-list ng-if="prjCtrl.showProjectList[project.id]" projid="project.id"></tasks-list>
     </div>
   </div>

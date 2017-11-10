@@ -11,8 +11,11 @@ import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookie';
 import ngtokenauth from 'ng-token-auth';
 import ngFileUpload from 'ng-file-upload';
-import angularBootstrapDatetimepicker from 'angular-bootstrap-datetimepicker';
+// import angularjsdatetimepicker from 'angularjs-datetime-picker';
+// import angularBootstrapDatetimepicker from 'angular-bootstrap-datetimepicker';
+// import angularMomentPicker from 'angular-moment-picker';
 import LoginCtrl from './login/login.controller';
+
 import RegisterCtrl from './register/register.controller';
 import ProjectsModule from './projects/projects.module';
 import TasksModule from './tasks/tasks.module';
@@ -27,7 +30,10 @@ angular.module('app', [
   ngCookies,
   ngtokenauth,
   ngFileUpload,
-  angularBootstrapDatetimepicker,
+  'moment-picker',
+  // angularBootstrapDatetimepicker,
+  // datePicker,
+  // angularMomentPicker,
   ProjectsModule.name,
   TasksModule.name,
   CommentsModule.name
@@ -53,8 +59,8 @@ angular.module('app', [
       storage:                 'cookies',
       forceValidateToken:      false,
       validateOnPageLoad:      true,
-      proxyIf:                 function() { return false; },
-      proxyUrl:                '/proxy',
+      // proxyIf:                 function() { return false; },
+      // proxyUrl:                '/proxy',
       omniauthWindowType:      'sameWindow',
       authProviderPaths: {
         github:   '/auth/github',
@@ -92,8 +98,19 @@ angular.module('app', [
       }
     });
 	})
-  .run(function($rootScope, $state){
-    $rootScope.$on('auth:logout-success', function(ev) {
-      $state.go('login');
-    });
-  });
+  .config(function($httpProvider) {
+      // $httpProvider.defaults.headers.common['X-CSRF-Token'] = angular.element(document.querySelector('meta[name=csrf-token]')).attr('content');
+      $httpProvider.defaults.withCredentials = true;
+              $httpProvider.defaults.useXDomain = true;
+
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    }
+  )
+  // .run(function($rootScope, $state){
+  //   $rootScope.$on('auth:logout-success', function(ev) {
+  //     $state.go('login');
+  //   });
+  // });
+// .run( function($http, $cookie) {
+//   $http.defaults.headers.post['X-CSRFToken'] = $cookies.csrftoken;
+// });

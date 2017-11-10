@@ -7,6 +7,7 @@ export default class CommentsCtrl{
     this.form = {};
 
     console.log('constructor Comments');
+    console.log('this.$scope.show'+this.$scope.show);
   }
 
   saveCommentForm(model, form){
@@ -24,12 +25,10 @@ export default class CommentsCtrl{
     }.bind(this));
   }
 
-  getListComments(){
-    this.service.getListCommentsAPI(this.$scope.projid, this.$scope.taskid)
+  getListComments(projid, taskid){
+    this.service.getListCommentsAPI(projid, taskid)
       .then(function(response){
-        console.log("old="+this.comments)
         this.comments = response.data;
-        console.log("new="+this.comments)
       }.bind(this));
   }
 
@@ -40,5 +39,8 @@ export default class CommentsCtrl{
             return obj.id !== comment.id;
         });
       }.bind(this));
+  }
+  closeModalComment(){
+    this.$scope.show = false;
   }
 }

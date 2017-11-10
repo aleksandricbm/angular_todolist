@@ -1,19 +1,18 @@
-export default class CommentsDirective {
-  constructor($parse) {
-    this.templateUrl = 'app/comments/comments.tpl.html';
+export default class DatePickerDirective {
+  constructor() {
+    this.templateUrl = 'app/component/date_picker.tpl.html';
     this.restrict = 'EA';
-    this.$parse = $parse;
     this.scope = {
-      taskid: '=',
-      projid: '=',
-      show: '='
+        task: '=',
+        showdatepicker: '='
     };
-    this.controller = 'CommentsCtrl';
-    this.controllerAs = 'comctrl';
+    this.transclude = true;
+    this.controller = 'DatePickerCtrl';
+    this.controllerAs = 'datepicker';
     this.link = function(scope, element, attributes) {
       scope.showModal = function (visible, elem) {
         if (!elem) elem = element;
-          $('#myModal').modal("show");
+          $('#myModalDatePicker').modal("show");
       }
       //Watch for changes to the modal-visible attribute
       scope.$watch(attributes.modalShow, function (newValue, oldValue) {

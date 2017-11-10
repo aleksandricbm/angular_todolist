@@ -1,9 +1,8 @@
 export default class TasksDirective {
   constructor() {
     this.templateUrl = 'app/tasks/taskslist.tpl.html';
-    this.restrict = 'EA';
+    this.restrict = 'E';
     this.scope = {
-        // tasks: '='
         projid: '='
     };
     this.transclude = true;
