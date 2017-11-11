@@ -1,13 +1,16 @@
 export default class RegisterCtrl{
-  constructor($rootScope, $location){
-
-    $rootScope.$on('auth:registration-email-success', function(ev, user) {
-      $location.path('/projects')
+  constructor($scope, $location, Flash){
+    $scope.$on('auth:registration-email-success', function(ev, user) {
+      $("#regform divs").removeClass("has-danger");
+      Flash.create('success', `<b>Well done!</b> Welcome You’re successfully registered!`)
     });
 
-      $rootScope.$on('auth:registration-email-error', function(ev, reason) {
+      $scope.$on('auth:registration-email-error', function(ev, reason) {
+      $("#regform div").removeClass("has-danger");
       angular.forEach(reason.errors, function(value, index) {
-        alert('error');
+        if (index =='full_messages') { return; }
+        Flash.create('danger', value);
+        $('#'+index).parent('div').addClass('has-danger');
       })
     });
   }

@@ -1,33 +1,33 @@
 export default class DatePickerCtrl{
-  constructor($scope, $http, $filter){
+  constructor($scope, $http, $filter, DatePickerService){
     this.$scope = $scope;
     this.minDateMoment = moment().subtract(1, 'day');
-    this.minDateString = moment().subtract(1, 'day').format('dd/mm/YYYY');
+    this.minDateString = moment().subtract(1, 'day').format('DD/MM/YYYY');
     this.minView = 'month';
+    this.form = {};
     this.today = true;
-    var dates = new Date(this.$scope.task.deadline);
-    this.deadline_date = $filter('date')(dates, "dd-MM-yyyy");
-    this.deadline_time = $filter('date')(dates, "HH:mm");
-    // console.log(this.$scope);
+    this.deadline_date = moment.utc(this.$scope.task.deadline).format('DD/MM/YYYY')
+    this.deadline_time = moment.utc(this.$scope.task.deadline).format('HH:mm');
+
+    this.service = DatePickerService;
   }
 
   closeModalDatePicker(){
     this.$scope.showdatepicker = false;
   }
-  saveDatePickerForm(model, form){
-      // var params = {
-      //   project_id: this.$scope.task.projid,
-      //   task_id: this.$scope.task.taskid//,
-      //   // comments: model.comment
-      // };
-
-      console.log("1_"+form);
-      this.$scope.task.name = 'TEST';
-      console.log(this.$scope);
-      // this.$scope.showdatepicker = false;
-      // this.service.createCommentAPI(params)
-      //   .then(function(response){
-      //     this.comments.push(response.data);
-      //   }.bind(this));
+  saveDatePickerForm(){
+      var deadline = this.$scope.datepicker.deadline_date + " " + this.$scope.datepicker.deadline_time
+      var params = {
+        project_id: this.$scope.task.project_id,
+        task_id: this.$scope.task.id,
+        deadline: deadline
+      };
+      console.log(this.$scope.task.name);
+      this.service.createDeadLineAPI(params)
+        .then(function(response){
+          $('#myModalDatePicker').modal("hide");
+          this.$scope.task.deadline = params.deadline;
+          this.$scope.showdatepicker = false;
+        }.bind(this));
   }
 }

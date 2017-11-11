@@ -9,7 +9,7 @@ export default function routes($stateProvider, $urlRouterProvider) {
               });
           }
         },
-      url: '/projects',
+      url: '/',
       templateUrl: 'app/projects/projects.tpl.html',
       controller: 'ProjectsCtrl',
       controllerAs: 'prjCtrl'

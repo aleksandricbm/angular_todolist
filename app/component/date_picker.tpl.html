@@ -11,7 +11,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <form name="newDatePickerForm" ng-submit="datepicker.saveDatePickerForm(datepicker.form, newDatePickerForm)" role="form">
+        <form name="newDatePickerForm" ng-submit="datepicker.saveDatePickerForm()" role="form">
 
           <div class="row">
             <div class="col-6">
@@ -33,6 +33,7 @@
                 <div class="input-group"
                      moment-picker="datepicker.deadline_time"
                      min-view="day"
+                     min-date="datepicker.minDateString"
                      today="true"
                      set-on-select="true"
                      format="HH:mm">

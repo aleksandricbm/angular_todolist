@@ -5,6 +5,7 @@ import TasksRoutes from './tasks.routes';
 import TasksDirective from './tasks.directive'
 import DatePickerDirective from '../component/date_picker.directive'
 import DatePickerCtrl from '../component/date_picker.controller'
+import DatePickerService from '../component/date_picker.service'
 import TasksService from './tasks.service'
 
 export default angular.module('app.tasks',[uirouter])
@@ -14,3 +15,5 @@ export default angular.module('app.tasks',[uirouter])
   .directive('tasksList', [() => new TasksDirective()])
   .directive('datePicker', [() => new DatePickerDirective()])
   .service('TasksService', TasksService)
+  .service('DatePickerService', DatePickerService)
+

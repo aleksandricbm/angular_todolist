@@ -1,5 +1,5 @@
 <div class="card" ng-init="tsk.getTasksList(projid)">
-  <ul class="list-group list-group-flush">
+  <ul class="list-group  list-group-flush">
     <li class="list-group-item" ng-repeat="task in tsk.tasks">
       <div class="d-inline btn-group btn-group-sm" role="group" ng-show="showedttask">
         <input type="text" ng-model=task.name required="required" class="form-control form-control input-sm" value="{{task.name}}">
@@ -7,17 +7,18 @@
         <button class="btn btn-sm btn-secondary" type="button" ng-click="tsk.cancel(task);showedttask=false" ng-discard>Cancel</button>
       </div>
       <div class="d-inline sort_arrows" ng-hide="showedttask">
-        <span ng-click="tsk.movePosition(projid, task, -1)">
-          <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        </span>
-        <span ng-click="tsk.movePosition(projid, task, 1)">
-          <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </span>
+        <span ng-click="tsk.movePosition(projid, task, -1)" class="fa fa-arrow-up" aria-hidden="true"></span>
+        <span ng-click="tsk.movePosition(projid, task, 1)" class="fa fa-arrow-down" aria-hidden="true"></span>
       </div>
       <div class="d-inline" ng-hide="showedttask">
         <input type="checkbox" ng-model="task.completed" ng-change="tsk.finished(task.project_id, task.id)">
-        {{ task.name}}
       </div>
+      <div class="task-line" ng-hide="showedttask">
+        <div>{{ task.name}}</div>
+        <small class="text-muted">{{ task.deadline | date: 'dd/MM/yyyy HH:mm' }}</small>
+      </div>
+
+
       <div class="panel_edit" style="z-index:999" ng-hide="showedttask">
         <span>
           <i class="fa fa-comment" aria-hidden="true" ng-click="tsk.show[task.id]=true"></i>

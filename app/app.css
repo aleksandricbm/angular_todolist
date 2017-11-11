@@ -2,6 +2,32 @@
   display: none;
 }
 
+.card {
+  margin-bottom: 10px;
+}
+.card-block {
+  padding: 0;
+}
+.card-block .card {
+  border-width: 0px;
+}
+
+small {
+  font-size: 60%;
+}
+.list-group-item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 57px;
+}
+
+.task-line {
+  width: 80%;
+  padding-left: 2%;
+}
+.fa {
+  margin-top: 5px;
+}
 .fa-sign-out {
   color: darkgrey;
 }
@@ -44,30 +70,12 @@
   margin: 0 auto;
 }
 
-/*.card-block:not(.collapsed):hash(> .card-header) {
-  background-color: rgb(225, 234, 242);
-}*/
 
-@import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
-/*.card-block:not(.collapsed):after + .card-header{
-  content: "\f054";
-}
-
-.card-header:after {
-    font-family: 'FontAwesome';
-    content: "\f054";
-    float: left;
-
-}*/
 
 .card-header > span {
   cursor:pointer;
 }
 
-.collapsed:hover {
-    font-family: 'FontAwesome';
-    content: "\f078";
-}
 .panel_edit{
   float: right;
   visibility: hidden;
@@ -82,18 +90,17 @@
 .list-group-item:hover > .sort_arrows{
   visibility: visible;
 }
-/*.card_block:not(.collapsed) > .panel_edit{
-  visibility: hidden;
-}*/
-/*.card-header:not([aria-expanded="true"]) .fa.fa-caret-down,
-.card-header[aria-expanded="false"] .fa.fa-caret-down,
-.card-header[aria-expanded="true"] .fa.fa-caret-right {
-   display:none;
-}*/
-
+ul < .list-group-item {
+  padding-left: 40px;
+}
 .sort_arrows{
   visibility: hidden;
   cursor:pointer;
+  width: 15px;
+  height: 50px;
+  float: right;
+  position: relative;
+  margin-right: 15px;
 }
 
 .file_upload{
@@ -122,7 +129,17 @@
 
 }
 
-
 .moment-picker {
   z-index: 99999;
+}
+
+.has-error{
+  border-color: red;
+}
+
+span[aria-expanded="true"] i:before{
+  content: "\f078";
+}
+span[aria-expanded="false"] i:before{
+  content: "\f054";
 }

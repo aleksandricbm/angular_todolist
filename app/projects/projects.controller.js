@@ -1,18 +1,22 @@
 export default class ProjectsCtrl{
-  constructor($scope, $http, ProjectsService){
+  constructor($scope, $http, ProjectsService, Flash, $window){
     this.projects = [];
     this.projects_copy = [];
     this.service = ProjectsService;
     this.showProjectList = [];
     this.$scope = $scope;
-    console.log('constructor ProjectsCtrl');
+    this.Flash = Flash;
+    this.$window = $window;
   }
 
   createProject(projname){
     this.service.createProjectAPI(projname)
       .then(function(response) {
         this.projects.push (response.data);
-      }.bind(this));
+      }.bind(this))
+      .catch(function(response){
+        this.Flash.create('danger', response.data.uniques_project);
+      }.bind(this))
   }
 
   edit(proj){
@@ -31,11 +35,14 @@ export default class ProjectsCtrl{
       }.bind(this));
   }
 
-  deleteProject(projid){
-    this.service.deleteProjectAPI(projid)
+  deleteProject(project){
+    var confirm = this.$window.confirm('Do you realy want to delete "' + project.name + '"?');
+    if (!confirm) { return false; }
+
+    this.service.deleteProjectAPI(project.id)
       .then(function(response) {
         this.projects = this.projects.filter(function( obj ) {
-            return obj.id !== projid;
+            return obj.id !== project.id;
         });
       }.bind(this));
   }

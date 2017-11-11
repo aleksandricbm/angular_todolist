@@ -13,7 +13,7 @@ export default function routes($stateProvider, $urlRouterProvider) {
             .then(function(){
                 $state.go('projects');
               })
-            .catch(function(){console.log('not login')});
+            .catch(function(){});
           }
         },
       controller: 'LoginCtrl'
@@ -24,7 +24,16 @@ export default function routes($stateProvider, $urlRouterProvider) {
       data: {
         css: 'app/login/login.css'
       },
+      resolve: {
+        auth: function ($auth, $state) {
+            return $auth.validateUser()
+            .then(function(){
+                $state.go('projects');
+              })
+            .catch(function(){});
+          }
+        },
       controller: 'RegisterCtrl'
     })
-    $urlRouterProvider.otherwise('/projects');
+    $urlRouterProvider.otherwise('/');
 }

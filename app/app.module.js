@@ -1,45 +1,29 @@
-// import $ from 'jquery';
-// window.jQuery = $;
-// window.$ = $;
-// import bootstrap from 'bootstrap';
-// import 'jquery/dist/jquery.slim.min.js';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.min.js';
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookie';
 import ngtokenauth from 'ng-token-auth';
 import ngFileUpload from 'ng-file-upload';
-// import angularjsdatetimepicker from 'angularjs-datetime-picker';
-// import angularBootstrapDatetimepicker from 'angular-bootstrap-datetimepicker';
-// import angularMomentPicker from 'angular-moment-picker';
 import LoginCtrl from './login/login.controller';
-
 import RegisterCtrl from './register/register.controller';
 import ProjectsModule from './projects/projects.module';
 import TasksModule from './tasks/tasks.module';
 import CommentsModule from './comments/comments.module';
 import routes from './app.routes';
-
+import ngFlash from 'angular-flash-alert'
 
 angular.module('app', [
 	uirouter,
-  // bootstrap,
   ngAnimate,
   ngCookies,
   ngtokenauth,
+  ngFlash,
   ngFileUpload,
   'moment-picker',
-  // angularBootstrapDatetimepicker,
-  // datePicker,
-  // angularMomentPicker,
   ProjectsModule.name,
   TasksModule.name,
   CommentsModule.name
   ])
-
-  /** @ngInject */
   .controller('LoginCtrl', LoginCtrl)
   .controller('RegisterCtrl', RegisterCtrl)
   .config(routes)
@@ -59,14 +43,6 @@ angular.module('app', [
       storage:                 'cookies',
       forceValidateToken:      false,
       validateOnPageLoad:      true,
-      // proxyIf:                 function() { return false; },
-      // proxyUrl:                '/proxy',
-      omniauthWindowType:      'sameWindow',
-      authProviderPaths: {
-        github:   '/auth/github',
-        facebook: '/auth/facebook',
-        google:   '/auth/google'
-      },
       tokenFormat: {
         "access-token": "{{ token }}",
         "token-type":   "Bearer",
@@ -79,7 +55,7 @@ angular.module('app', [
         expires: 9999,
         expirationUnit: 'days',
         secure: false,
-        domain: 'localhost'
+        domain: '192.168.0.108'
       },
       createPopup: function(url) {
         return window.open(url, '_blank', 'closebuttoncaption=Cancel');
@@ -98,19 +74,9 @@ angular.module('app', [
       }
     });
 	})
-  .config(function($httpProvider) {
-      // $httpProvider.defaults.headers.common['X-CSRF-Token'] = angular.element(document.querySelector('meta[name=csrf-token]')).attr('content');
-      $httpProvider.defaults.withCredentials = true;
-              $httpProvider.defaults.useXDomain = true;
-
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    }
-  )
-  // .run(function($rootScope, $state){
-  //   $rootScope.$on('auth:logout-success', function(ev) {
-  //     $state.go('login');
-  //   });
-  // });
-// .run( function($http, $cookie) {
-//   $http.defaults.headers.post['X-CSRFToken'] = $cookies.csrftoken;
-// });
+  .run(function($rootScope, $state, Flash){
+    Flash.clear();
+    $rootScope.$on('auth:logout-success', function(ev) {
+      $state.go('login');
+    });
+  });
