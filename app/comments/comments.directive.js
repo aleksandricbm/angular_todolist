@@ -4,7 +4,7 @@ export default class CommentsDirective {
     this.restrict = 'EA';
     this.$parse = $parse;
     this.scope = {
-      taskid: '=',
+      task: '=',
       projid: '=',
       show: '='
     };

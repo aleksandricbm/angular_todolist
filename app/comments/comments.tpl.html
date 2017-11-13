@@ -1,5 +1,5 @@
 <!-- The Modal -->
-<div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" ng-init="comctrl.getListComments(projid, taskid)">
+<div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" ng-init="comctrl.getListComments(projid, task.id)">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -16,12 +16,14 @@
             <textarea class="form-control" ng-model="comctrl.form.comment" rows="3" placeholder="Enter Your Comment"></textarea>
           </div>
           <div class="form-group">
-            <i class="fa fa-paperclip fa-2x file_upload" aria-hidden="true" ngf-select ng-model="comctrl.form.file_upload" name="file_upload" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="20MB"></i>
+            <i class="fa fa-paperclip fa-2x file_upload" aria-hidden="true" ngf-select ng-model="comctrl.form.file_upload" name="file_upload" ngf-pattern="'image/jpeg,image/jpg,image/png'" ngf-accept="'image/jpeg,image/jpg,image/png'" ngf-max-size="10MB" ngf-model-invalid="errorFiles"></i>
           </div>
-          <img class="home-icon-img" ngf-thumbnail="comctrl.form.file_upload">
+          <i class="text-danger" ng-show="newCommentForm.file_upload.$error.maxSize">An uploaded file is too large. The size shouldn’t exceed 10 MB.</i>
+          <i class="text-danger" ng-show="newCommentForm.file_upload.$error.pattern">Wrong file format. You can upload a *.jpg or *.png formats files only.</i>
+          <img class="home-icon-img" ngf-thumbnail="comctrl.form.file_upload" ngf-size="{width: 140, height: 140, quality: 0.9}">
           <div class="form-group">
-            <button type="submit" value="submit" class="btn btn-secondary">Save</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="comctrl.closeModalComment()">Cancel</button>
+            <button type="submit" value="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" ng-click="comctrl.closeModalComment()">Cancel</button>
           </div>
         </form>
       </div>
@@ -34,7 +36,7 @@
             <i class="fa fa-trash" aria-hidden="true" ng-click="comctrl.deleteComment(comment)"></i>
           </div>
           <div class="body">
-            {{comment.comments}}
+            {{comment.comment}}
           </div>
           <div class="comment_file" ng-show="comment.file.url !== null">
             <img class="home-icon-img" ngf-thumbnail="comment.file.url">

@@ -22,9 +22,14 @@ small {
 }
 
 .task-line {
-  width: 80%;
+  width: 75%;
   padding-left: 2%;
 }
+
+.task-cross {
+  text-decoration: line-through;
+}
+
 .fa {
   margin-top: 5px;
 }
@@ -67,19 +72,19 @@ small {
 
 .proj-container{
   width: 70%;
-  margin: 0 auto;
+  margin: 10% auto;
 }
-
-
 
 .card-header > span {
   cursor:pointer;
+  padding-left: 10px;
 }
 
 .panel_edit{
   float: right;
   visibility: hidden;
   cursor:pointer;
+  z-index:999;
 }
 .card-header:hover > .panel_edit{
   visibility: visible;

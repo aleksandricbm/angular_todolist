@@ -14,12 +14,11 @@
         <input type="checkbox" ng-model="task.completed" ng-change="tsk.finished(task.project_id, task.id)">
       </div>
       <div class="task-line" ng-hide="showedttask">
-        <div>{{ task.name}}</div>
-        <small class="text-muted">{{ task.deadline | date: 'dd/MM/yyyy HH:mm' }}</small>
+        <div ng-class="task.completed ? 'task-cross' : '' ">{{ task.name}}</div>
+        <small class="text-muted" ng-class="tsk.checkDate(task.deadline) ? 'text-success' : 'text-danger' " ng-show="!task.completed">{{ task.deadline | date: 'dd/MM/yyyy HH:mm' }} </small>
       </div>
-
-
       <div class="panel_edit" style="z-index:999" ng-hide="showedttask">
+        <span class="badge badge-default" ng-if="task.comments_qty > 0 ">{{task.comments_qty}}</span>
         <span>
           <i class="fa fa-comment" aria-hidden="true" ng-click="tsk.show[task.id]=true"></i>
         </span>
@@ -33,7 +32,7 @@
           <i class="fa fa-trash" aria-hidden="true" ng-click="tsk.deleteTask(task, projid)"></i>
         </span>
       </div>
-      <comments-list ng-if="tsk.show[task.id]===true" projid="projid" taskid="task.id" show="tsk.show[task.id]"></comments-list>
+      <comments-list ng-if="tsk.show[task.id]===true" projid="projid" task="task" show="tsk.show[task.id]"></comments-list>
       <date-picker ng-if="tsk.showdatepicker[task.id]===true" task="task" showdatepicker="tsk.showdatepicker[task.id]"></date-picker>
     </li>
   </ul>

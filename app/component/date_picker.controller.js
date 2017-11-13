@@ -6,8 +6,9 @@ export default class DatePickerCtrl{
     this.minView = 'month';
     this.form = {};
     this.today = true;
-    this.deadline_date = moment.utc(this.$scope.task.deadline).format('DD/MM/YYYY')
-    this.deadline_time = moment.utc(this.$scope.task.deadline).format('HH:mm');
+    var dl = this.$scope.task.deadline === null? new Date() : this.$scope.task.deadline
+    this.deadline_date = moment.utc(dl).format('DD/MM/YYYY')
+    this.deadline_time = moment.utc(dl).format('HH:mm');
 
     this.service = DatePickerService;
   }

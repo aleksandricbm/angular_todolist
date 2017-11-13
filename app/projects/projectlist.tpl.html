@@ -1,8 +1,7 @@
 <div id="accordion" class="accordion" ng-controller="ProjectsCtrl as prjCtrl" ng-init="prjCtrl.getListProjects()" ng-controller="TasksCtrl as tskCtrl">
-  <!-- <div class="card m-b-0" ng-controller="TasksCtrl as tskCtrl"> -->
   <div class="card m-b-0" ng-repeat="project in prjCtrl.projects">
     <div class="card-header">
-      <span style="padding-left: 10px" data-toggle="collapse" data-parent="#accordion" href="#projid{{ project.id }}" ng-click="prjCtrl.showTaskList(project.id)" ng-hide="showedtprj">
+      <span data-toggle="collapse" data-parent="#accordion" href="#projid{{ project.id }}" ng-click="prjCtrl.showTaskList(project.id)" ng-hide="showedtprj">
         <i class="fa fa-chevron-right pull-left"></i>
         {{ project.name }}{{isCollapsed[project.id]}}
       </span>
@@ -13,7 +12,7 @@
         <button class="btn btn-sm btn-secondary" type="button" ng-click="prjCtrl.cancel(project);showedtprj=false" ng-discard>Cancel</button>
       </div>
 
-      <div class="panel_edit" style="z-index:999">
+      <div class="panel_edit">
         <span  ng-click="prjCtrl.edit(project);showedtprj=true">
           <i class="fa fa-pencil" aria-hidden="true"></i>
         </span>

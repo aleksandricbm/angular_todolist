@@ -55,7 +55,7 @@ angular.module('app', [
         expires: 9999,
         expirationUnit: 'days',
         secure: false,
-        domain: '192.168.0.108'
+        domain: '192.168.202.45'
       },
       createPopup: function(url) {
         return window.open(url, '_blank', 'closebuttoncaption=Cancel');

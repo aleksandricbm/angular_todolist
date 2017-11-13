@@ -5,22 +5,20 @@ export default class CommentsCtrl{
     this.$scope = $scope;
     this.Upload = Upload;
     this.form = {};
-
-    console.log('constructor Comments');
-    console.log('this.$scope.show'+this.$scope.show);
   }
 
   saveCommentForm(model, form){
     this.Upload.base64DataUrl(model.file_upload).then( function (url){
       var params = {
         project_id: this.$scope.projid,
-        task_id: this.$scope.taskid,
-        comments: model.comment,
+        task_id: this.$scope.task.id,
+        comment: model.comment,
         file: url
       };
       this.service.createCommentAPI(params)
         .then(function(response){
           this.comments.push(response.data);
+          this.$scope.task.comments_qty+=1;
         }.bind(this));
     }.bind(this));
   }
@@ -33,11 +31,12 @@ export default class CommentsCtrl{
   }
 
   deleteComment(comment){
-    this.service.deleteCommentAPI(comment.id, this.$scope.projid, this.$scope.taskid)
+    this.service.deleteCommentAPI(comment.id, this.$scope.projid, this.$scope.task.id)
       .then(function(response) {
         this.comments = this.comments.filter(function( obj ) {
             return obj.id !== comment.id;
         });
+        this.$scope.task.comments_qty-=1;
       }.bind(this));
   }
   closeModalComment(){

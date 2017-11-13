@@ -1,10 +1,13 @@
 export default class TasksCtrl{
-  constructor($scope, $http, TasksService, $rootScope){
+  constructor($scope, $http, TasksService, $rootScope, $window, Flash){
     this.tasks = [];
     this.tasks_copy = [];
     this.service = TasksService;
     this.$scope = $scope;
     this.showdatepicker = [];
+    this.$window = $window;
+    this.Flash = Flash;
+    this.dateNow = new Date();
   }
 
   getTasksList(proj){
@@ -44,9 +47,18 @@ export default class TasksCtrl{
     }
   }
 
+  allTaskFinished() {
+    var count=0;
+    angular.forEach(this.tasks, function(arr){
+      arr.completed === true ? count+=1 : '';
+    })
+    if (this.tasks.length == count) this.Flash.create('success', 'Well Done! You’re successfully completed all the task.');
+  }
+
   finished(projid, task){
     this.service.changeTaskStatusAPI(projid, task)
       .then(function(response){
+        this.allTaskFinished();
       }.bind(this));
   }
 
@@ -67,11 +79,18 @@ export default class TasksCtrl{
   }
 
   deleteTask(task, projid){
+    var confirm = this.$window.confirm('Do you realy want to delete "' + task.name + '"?');
+    if (!confirm) { return false; }
     this.service.deleteTaskAPI(task.id, projid)
       .then(function(response) {
         this.tasks = this.tasks.filter(function( obj ) {
             return obj.id !== task.id;
         });
       }.bind(this));
+  }
+
+  checkDate(date){
+    if (date === null) return false;
+    return moment.utc(date) > moment.utc(new Date()) ? true : false
   }
 }
