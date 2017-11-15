@@ -4,7 +4,7 @@ export default class ProjectsService{
   }
 
   createProjectAPI(proj){
-    return this.$http.post('/api/v1/projects', { params: { name: proj }});
+    return this.$http.post('/api/v1/projects', { project: { name: proj }});
   }
 
   getListProjectsAPI() {
@@ -12,7 +12,7 @@ export default class ProjectsService{
   }
 
   editProjectAPI(proj) {
-    return this.$http.patch('/api/v1/projects/' + proj.id, { params: { name: proj.name } } );
+    return this.$http.patch('/api/v1/projects/' + proj.id, { project: { name: proj.name } } );
   }
 
   deleteProjectAPI(proj) {

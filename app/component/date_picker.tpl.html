@@ -21,7 +21,7 @@
                   min-view="datepicker.minView"
                   today="datepicker.today"
                   start-view="month"
-                  min-date="datepicker.minDateString"
+                  min-date="datepicker.deadline_date"
                   >
                   <input class="form-control" placeholder="dd/mm/YYYY" ng-model="datepicker.deadline_date" ng-model-options="{ updateOn: 'blur' }">
               </div>
@@ -31,12 +31,11 @@
               <div class="form-group">
                 <label for="date_picker">Time</label>
                 <div class="input-group"
-                     moment-picker="datepicker.deadline_time"
-                     min-view="day"
-                     min-date="datepicker.minDateString"
-                     today="true"
-                     set-on-select="true"
-                     format="HH:mm">
+                    moment-picker="datepicker.deadline_time"
+                    start-view="day"
+                    max-view="day"
+                    set-on-select="true"
+                    format="HH:mm">
                     <input class="form-control"
                            placeholder="Select a time"
                            ng-model="datepicker.deadline_time"

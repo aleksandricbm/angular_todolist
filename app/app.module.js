@@ -27,7 +27,8 @@ angular.module('app', [
   .controller('LoginCtrl', LoginCtrl)
   .controller('RegisterCtrl', RegisterCtrl)
   .config(routes)
-	.config(function($authProvider) {
+	.config(function($authProvider, $qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
     $authProvider.configure({
       apiUrl:                  '/api',
       tokenValidationPath:     '/auth/validate_token',

@@ -12,8 +12,10 @@ export default class CommentsCtrl{
       var params = {
         project_id: this.$scope.projid,
         task_id: this.$scope.task.id,
-        comment: model.comment,
-        file: url
+        data: {
+          comment: model.comment,
+          file: url
+        }
       };
       this.service.createCommentAPI(params)
         .then(function(response){

@@ -4,6 +4,6 @@ export default class DatePickerService{
   }
 
   createDeadLineAPI(data){
-    return this.$http.put('/api/v1/tasks/' + data.task_id + '/deadline',  data );
+    return this.$http.put('/api/v1/tasks/' + data.task_id,  data );
   }
 }

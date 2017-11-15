@@ -24,27 +24,15 @@ export default class TasksCtrl{
       }.bind(this));
   }
 
-  movePosition(projid, obj, position){
-    var oldIndex = this.tasks.indexOf(obj);
-    var arrayClone = [];
-    if (oldIndex > -1 && (oldIndex + position)>-1 && (oldIndex + position)<(this.tasks.length-1)){
-      var newIndex = (oldIndex + position);
-
-      if (newIndex < 0){
-        newIndex = 0
-      }else if (newIndex >= this.tasks.length){
-        newIndex = this.tasks.length
-      }
-      arrayClone = this.tasks.slice();
-      arrayClone[oldIndex]['position']=newIndex
-      arrayClone.splice(oldIndex,1);
-      arrayClone.splice(newIndex,0,this.tasks[oldIndex]);
-      arrayClone[newIndex]['position']=oldIndex
-      this.service.movePositionAPI(projid, arrayClone)
+  movePosition(projid, taskid, direction){
+      var params = {
+        project_id: projid,
+        direction: direction
+      };
+      this.service.updateAPI(taskid, params)
         .then(function(response){
-          this.tasks = arrayClone;
+          this.tasks = response.data;
         }.bind(this));
-    }
   }
 
   allTaskFinished() {
@@ -55,9 +43,14 @@ export default class TasksCtrl{
     if (this.tasks.length == count) this.Flash.create('success', 'Well Done! You’re successfully completed all the task.');
   }
 
-  finished(projid, task){
-    this.service.changeTaskStatusAPI(projid, task)
+  finished(taskid){
+    var params = {
+        project_id: this.$scope.projid,
+        completed: 0
+      };
+    this.service.updateAPI(taskid, params)
       .then(function(response){
+        this.tasks = response.data;
         this.allTaskFinished();
       }.bind(this));
   }
@@ -73,8 +66,13 @@ export default class TasksCtrl{
   }
 
   editTask(task){
-    this.service.editTaskAPI(task)
+    var params = {
+        project_id: this.$scope.projid,
+        name: task.name
+      };
+    this.service.updateAPI(task.id, params)
       .then(function(response) {
+        this.tasks = response.data;
       }.bind(this));
   }
 

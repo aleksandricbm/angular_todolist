@@ -3,8 +3,8 @@ export default class CommentsService{
     this.$http = $http;
   }
 
-  createCommentAPI(data){
-    return this.$http.post('/api/v1/comments',  data );
+  createCommentAPI(params){
+    return this.$http.post('/api/v1/comments',  params );
   }
 
   getListCommentsAPI(projid, taskid){
