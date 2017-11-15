@@ -7,6 +7,15 @@ export default function routes($stateProvider, $urlRouterProvider) {
       data: {
         css: 'app/login/login.css'
       },
+      resolve: {
+        auth: function ($auth, $state) {
+            return $auth.validateUser()
+            .then(function(){
+                $state.go('/');
+              })
+            .catch(function(){});
+          }
+        },
       controller: 'LoginCtrl'
     })
     .state('register', {
@@ -19,7 +28,7 @@ export default function routes($stateProvider, $urlRouterProvider) {
         auth: function ($auth, $state) {
             return $auth.validateUser()
             .then(function(){
-                $state.go('projects');
+                $state.go('/');
               })
             .catch(function(){});
           }

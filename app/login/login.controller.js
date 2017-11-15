@@ -5,7 +5,7 @@ export default class LoginCtrl{
       Flash.create('success', `Welcome ${user.email}`)
     });
 
-      $rootScope.$on('auth:login-error', function(ev, reason) {
+    $rootScope.$on('auth:login-error', function(ev, reason) {
       $("#loginform div").removeClass("has-danger");
       angular.forEach(reason.errors, function(value, index) {
         if (index =='full_messages') { return; }
@@ -13,5 +13,10 @@ export default class LoginCtrl{
         $('#loginform').addClass('has-danger');
       })
     });
+
+    $rootScope.$on('auth:logout-success', function(ev) {
+      $location.path('/login');
+    });
+
   }
 }

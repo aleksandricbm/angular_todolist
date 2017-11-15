@@ -1,5 +1,7 @@
 const path = require('path');
 var webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
+// const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     entry: './app/app.module.js',
     output: {
@@ -26,17 +28,12 @@ module.exports = {
             }
     }
     },
-    // plugins:[
-    //     new webpack.ProvidePlugin({
-    //         jQuery: 'jquery',
-    //         $: 'jquery',
-    //         jquery: 'jquery',
-    //         Popper: ['popper.js', 'default'],
-    //         Util: "exports-loader?Util!bootstrap/js/dist/util",
-    //         Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
-    //         // bootstrap: 'bootstrap'
-    //         // angular: 'angular'
-    //     })
-    // ],
-    devtool: "#inline-source-map"
+    devtool: "#inline-source-map",
+    plugins: [
+        new Dotenv({
+          path: './.env',
+          safe: false
+        }),
+        // new UglifyJSPlugin()
+    ]
 }

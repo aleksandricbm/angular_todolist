@@ -30,7 +30,7 @@ angular.module('app', [
 	.config(function($authProvider, $qProvider) {
     $qProvider.errorOnUnhandledRejections(false);
     $authProvider.configure({
-      apiUrl:                  '/api',
+      apiUrl:                  process.env.API_URL,
       tokenValidationPath:     '/auth/validate_token',
       signOutUrl:              '/auth/sign_out',
       emailRegistrationPath:   '/auth',
@@ -56,7 +56,7 @@ angular.module('app', [
         expires: 9999,
         expirationUnit: 'days',
         secure: false,
-        domain: '192.168.202.45'
+        domain: process.env.DB_HOST
       },
       createPopup: function(url) {
         return window.open(url, '_blank', 'closebuttoncaption=Cancel');
@@ -77,7 +77,7 @@ angular.module('app', [
 	})
   .run(function($rootScope, $state, Flash){
     Flash.clear();
-    $rootScope.$on('auth:logout-success', function(ev) {
-      $state.go('login');
-    });
+    // $rootScope.$on('auth:logout-success', function(ev) {
+    //   $state.go('login');
+    // });
   });
