@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple ToDo List</title>
+  <script src="dist/bundle.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <!-- <link href="node_modules/angular-bootstrap-datetimepicker/src/css/datetimepicker.css" rel="stylesheet"/> -->
+  <link href="node_modules/angular-moment-picker/dist/angular-moment-picker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./app/app.css">
+</head>
+<body ng-cloak>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+  <script src="//cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.js"></script>
+
+  <div class="container">
+
+    <nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a ng-href="/#!/" target="_self" class="navbar-brand"><img class="" alt="RubyGarage" src="./logo_icon.svg" ></a>
+
+      <div class="collapse navbar-collapse" id="containerNavbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <span class="navbar-brand mb-0 h1">Simple ToDo List</span>
+          </li>
+
+        </ul>
+        <a href="/" ng-click='signOut()' ng-show="user.signedIn"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+    <div ui-view=""></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<div class="card" ng-init="tsk.getTasksList(projid)">
+  <ul class="list-group  list-group-flush">
+    <li class="list-group-item" ng-repeat="task in tsk.tasks">
+      <div class="btn-group btn-group-sm" role="group" ng-show="showedttask">
+        <input type="text" ng-model=task.name required="required" class="form-control form-control input-sm" value="{{task.name}}">
+        <button class="btn btn-ls btn-primary" type="submit" ng-click="tsk.editTask(task);showedttask=false">Save</button>
+        <button class="btn btn-ls btn-secondary" type="button" ng-click="tsk.cancel(task);showedttask=false" ng-discard>Cancel</button>
+      </div>
+      <div class="d-inline sort_arrows" ng-hide="showedttask">
+        <span ng-click="tsk.movePosition(projid, task.id, 'up')" class="fa fa-arrow-up" aria-hidden="true"></span>
+        <span ng-click="tsk.movePosition(projid, task.id, 'down')" class="fa fa-arrow-down" aria-hidden="true"></span>
+      </div>
+      <div class="d-inline" ng-hide="showedttask">
+        <input type="checkbox" ng-model="task.completed" ng-change="tsk.finished(task.id)">
+      </div>
+      <div class="task-line" ng-hide="showedttask">
+        <div ng-class="task.completed ? 'task-cross' : '' ">{{ task.name}}</div>
+        <small class="text-muted" ng-class="tsk.checkDate(task.deadline) ? 'text-success' : 'text-danger' " ng-show="!task.completed">{{ task.deadline | date: 'dd/MM/yyyy HH:mm' }} </small>
+      </div>
+      <div class="panel_edit" style="z-index:999" ng-hide="showedttask">
+        <span class="badge badge-default" ng-if="task.comments_count > 0 ">{{task.comments_count}}</span>
+        <span>
+          <i class="fa fa-comment" aria-hidden="true" ng-click="tsk.show[task.id]=true"></i>
+        </span>
+        <span>
+          <i class="fa fa-clock-o" aria-hidden="true" ng-click="tsk.showdatepicker[task.id]=true"></i>
+        </span>
+        <span>
+          <i class="fa fa-pencil" aria-hidden="true" ng-click="tsk.edit(task);showedttask=true"></i>
+        </span>
+        <span>
+          <i class="fa fa-trash" aria-hidden="true" ng-click="tsk.deleteTask(task, projid)"></i>
+        </span>
+      </div>
+      <comments-list ng-if="tsk.show[task.id]===true" projid="projid" task="task" show="tsk.show[task.id]"></comments-list>
+      <date-picker ng-if="tsk.showdatepicker[task.id]===true" task="task" showdatepicker="tsk.showdatepicker[task.id]"></date-picker>
+    </li>
+  </ul>
+  <div class="">
+    <input type="text" required="required" class="form-control" placeholder="Enter Task Name ..." ng-click="showbtn=true" ng-model="tasknew">
+    <div class="btn-group" role="group">
+      <button class="btn btn-ls btn-primary" type="submit" ng-show="showbtn" ng-click="tsk.createTask(tasknew, projid)">Add Task</button>
+      <button class="btn btn-ls btn-secondary" type="button" ng-show="showbtn" ng-click="showbtn=false">Cancel</button>
+    </div>
+  </div>
+</div>

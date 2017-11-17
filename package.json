@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-cookie": "^4.1.0",
+    "angular-cookies": "^1.6.6",
+    "angular-flash-alert": "^2.5.0",
+    "angular-moment-picker": "^0.10.1",
+    "angular-ui-router": "^0.4.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "concurrently": "^3.5.0",
+    "dotenv-webpack": "^1.5.4",
+    "jquery": "3",
+    "moment": "^2.19.1",
+    "moment-datepicker": "^2.0.4",
+    "ng-animate": "^0.3.0",
+    "ng-file-upload": "^12.2.13",
+    "ng-token-auth": "^0.0.30",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "scripts": {
+    "start": "concurrently 'webpack-dev-server --host 0.0.0.0' 'webpack --watch'"
+  },
+  "dependencies": {
+    "popper.js": "^1.12.6"
+  }
+}

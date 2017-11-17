@@ -1,0 +1,3255 @@
+yarn run v1.2.1
+$ concurrently 'webpack-dev-server' 'webpack --watch'
+[1] 
+[1] Webpack is watching the files…
+[1] 
+[0] [HPM] Proxy created: /api  ->  http://localhost:3000
+[0] [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
+[0] Project is running at http://localhost:8080/
+[0] webpack output is served from /
+[1] Hash: f293982d38baa7f46961
+[1] Version: webpack 3.8.1
+[1] Time: 4823ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]    [2] ./app/app.module.js 3.31 kB {0} [built]
+[1]    [9] ./app/login/login.controller.js 671 bytes {0} [built]
+[1]   [10] ./app/register/register.controller.js 662 bytes {0} [built]
+[1]   [11] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[1]   [12] ./app/projects/projects.controller.js 2.22 kB {0} [built]
+[1]   [13] ./app/projects/projects.routes.js 571 bytes {0} [built]
+[1]   [14] ./app/projects/projects.directive.js 619 bytes {0} [built]
+[1]   [15] ./app/projects/projects.service.js 1.47 kB {0} [built]
+[1]   [16] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[1]   [17] ./app/tasks/tasks.controller.js 1.61 kB {0} [built]
+[1]   [18] ./app/tasks/tasks.routes.js 571 bytes {0} [built]
+[1]   [19] ./app/tasks/tasks.directive.js 552 bytes {0} [built]
+[1]   [20] ./app/tasks/tasks.service.js 1.19 kB {0} [built]
+[1]   [21] ./app/app.routes.js 870 bytes {0} [built]
+[1]     + 8 hidden modules
+[0] Hash: 739a2ff5c886d18e6f9f
+[0] Version: webpack 3.8.1
+[0] Time: 5607ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]    [0] ./node_modules/angular/index.js 48 bytes {0} [built]
+[0]    [4] multi (webpack)-dev-server/client?http://localhost:8080 ./app/app.module.js 40 bytes {0} [built]
+[0]    [5] (webpack)-dev-server/client?http://localhost:8080 7.95 kB {0} [built]
+[0]    [6] ./node_modules/url/url.js 23.3 kB {0} [built]
+[0]   [13] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [25] (webpack)/hot/emitter.js 75 bytes {0} [built]
+[0]   [27] ./app/app.module.js 3.31 kB {0} [built]
+[0]   [29] ./node_modules/angular-animate/index.js 60 bytes {0} [built]
+[0]   [31] ./node_modules/angular-cookie/index.js 58 bytes {0} [built]
+[0]   [33] ./node_modules/ng-token-auth/dist/ng-token-auth.js 36.4 kB {0} [built]
+[0]   [34] ./app/login/login.controller.js 671 bytes {0} [built]
+[0]   [35] ./app/register/register.controller.js 662 bytes {0} [built]
+[0]   [36] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[0]   [41] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[0]     + 32 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/validate_token from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[1] webpack --watch exited with code null
+[0] webpack-dev-server exited with code null
+yarn run v1.2.1
+$ concurrently 'webpack-dev-server' 'webpack --watch'
+[1] 
+[1] Webpack is watching the files…
+[1] 
+[0] [HPM] Proxy created: /api  ->  http://localhost:3000
+[0] [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
+[0] Project is running at http://localhost:8080/
+[0] webpack output is served from /
+[0] webpack: wait until bundle finished: /
+[1] Hash: f293982d38baa7f46961
+[1] Version: webpack 3.8.1
+[1] Time: 8028ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]    [2] ./app/app.module.js 3.31 kB {0} [built]
+[1]    [9] ./app/login/login.controller.js 671 bytes {0} [built]
+[1]   [10] ./app/register/register.controller.js 662 bytes {0} [built]
+[1]   [11] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[1]   [12] ./app/projects/projects.controller.js 2.22 kB {0} [built]
+[1]   [13] ./app/projects/projects.routes.js 571 bytes {0} [built]
+[1]   [14] ./app/projects/projects.directive.js 619 bytes {0} [built]
+[1]   [15] ./app/projects/projects.service.js 1.47 kB {0} [built]
+[1]   [16] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[1]   [17] ./app/tasks/tasks.controller.js 1.61 kB {0} [built]
+[1]   [18] ./app/tasks/tasks.routes.js 571 bytes {0} [built]
+[1]   [19] ./app/tasks/tasks.directive.js 552 bytes {0} [built]
+[1]   [20] ./app/tasks/tasks.service.js 1.19 kB {0} [built]
+[1]   [21] ./app/app.routes.js 870 bytes {0} [built]
+[1]     + 8 hidden modules
+[0] Hash: 739a2ff5c886d18e6f9f
+[0] Version: webpack 3.8.1
+[0] Time: 7788ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]    [0] ./node_modules/angular/index.js 48 bytes {0} [built]
+[0]    [4] multi (webpack)-dev-server/client?http://localhost:8080 ./app/app.module.js 40 bytes {0} [built]
+[0]    [5] (webpack)-dev-server/client?http://localhost:8080 7.95 kB {0} [built]
+[0]    [6] ./node_modules/url/url.js 23.3 kB {0} [built]
+[0]   [13] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [25] (webpack)/hot/emitter.js 75 bytes {0} [built]
+[0]   [27] ./app/app.module.js 3.31 kB {0} [built]
+[0]   [29] ./node_modules/angular-animate/index.js 60 bytes {0} [built]
+[0]   [31] ./node_modules/angular-cookie/index.js 58 bytes {0} [built]
+[0]   [33] ./node_modules/ng-token-auth/dist/ng-token-auth.js 36.4 kB {0} [built]
+[0]   [34] ./app/login/login.controller.js 671 bytes {0} [built]
+[0]   [35] ./app/register/register.controller.js 662 bytes {0} [built]
+[0]   [36] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[0]   [41] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[0]     + 32 hidden modules
+[0] webpack: Compiled successfully.
+yarn run v1.2.1
+$ concurrently 'webpack-dev-server' 'webpack --watch'
+[1] 
+[1] Webpack is watching the files…
+[1] 
+[0] [HPM] Proxy created: /api  ->  http://localhost:3000
+[0] [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
+[0] Project is running at http://localhost:8081/
+[0] webpack output is served from /
+[1] Hash: f293982d38baa7f46961
+[1] Version: webpack 3.8.1
+[1] Time: 6100ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]    [2] ./app/app.module.js 3.31 kB {0} [built]
+[1]    [9] ./app/login/login.controller.js 671 bytes {0} [built]
+[1]   [10] ./app/register/register.controller.js 662 bytes {0} [built]
+[1]   [11] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[1]   [12] ./app/projects/projects.controller.js 2.22 kB {0} [built]
+[1]   [13] ./app/projects/projects.routes.js 571 bytes {0} [built]
+[1]   [14] ./app/projects/projects.directive.js 619 bytes {0} [built]
+[1]   [15] ./app/projects/projects.service.js 1.47 kB {0} [built]
+[1]   [16] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[1]   [17] ./app/tasks/tasks.controller.js 1.61 kB {0} [built]
+[1]   [18] ./app/tasks/tasks.routes.js 571 bytes {0} [built]
+[1]   [19] ./app/tasks/tasks.directive.js 552 bytes {0} [built]
+[1]   [20] ./app/tasks/tasks.service.js 1.19 kB {0} [built]
+[1]   [21] ./app/app.routes.js 870 bytes {0} [built]
+[1]     + 8 hidden modules
+[0] Hash: d74be80a9b44c1f52210
+[0] Version: webpack 3.8.1
+[0] Time: 6632ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]    [0] ./node_modules/angular/index.js 48 bytes {0} [built]
+[0]    [4] multi (webpack)-dev-server/client?http://localhost:8081 ./app/app.module.js 40 bytes {0} [built]
+[0]    [5] (webpack)-dev-server/client?http://localhost:8081 7.95 kB {0} [built]
+[0]    [6] ./node_modules/url/url.js 23.3 kB {0} [built]
+[0]   [13] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [25] (webpack)/hot/emitter.js 75 bytes {0} [built]
+[0]   [27] ./app/app.module.js 3.31 kB {0} [built]
+[0]   [29] ./node_modules/angular-animate/index.js 60 bytes {0} [built]
+[0]   [31] ./node_modules/angular-cookie/index.js 58 bytes {0} [built]
+[0]   [33] ./node_modules/ng-token-auth/dist/ng-token-auth.js 36.4 kB {0} [built]
+[0]   [34] ./app/login/login.controller.js 671 bytes {0} [built]
+[0]   [35] ./app/register/register.controller.js 662 bytes {0} [built]
+[0]   [36] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[0]   [41] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[0]     + 32 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=40 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 22ea1f94ef5ad27fc965
+[1] Version: webpack 3.8.1
+[1] Time: 3480ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.6 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 697340e4d525679296ca
+[0] Version: webpack 3.8.1
+[0] Time: 3665ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.6 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: ebfc6c4e2da5dfc689be
+[0] Version: webpack 3.8.1
+[0] Time: 3679ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.6 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[1] Hash: 22ea1f94ef5ad27fc965
+[1] Version: webpack 3.8.1
+[1] Time: 4704ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.6 kB {0} [built]
+[1]     + 21 hidden modules
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 8cab8ef253a58394c054
+[1] Version: webpack 3.8.1
+[1] Time: 2410ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 8cab8ef253a58394c054
+[1] Version: webpack 3.8.1
+[1] Time: 2612ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 279173d4756f34824f3b
+[0] Version: webpack 3.8.1
+[0] Time: 3051ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 88a3f5fa09da441cc0c9
+[0] Version: webpack 3.8.1
+[0] Time: 3182ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 1b139c0547e979134f29
+[1] Version: webpack 3.8.1
+[1] Time: 3351ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.25 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 1b139c0547e979134f29
+[1] Version: webpack 3.8.1
+[1] Time: 3384ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.25 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 7d1a8c2273f4a7b762d9
+[0] Version: webpack 3.8.1
+[0] Time: 3733ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.25 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 6cf849eb6613b68c7c39
+[0] Version: webpack 3.8.1
+[0] Time: 3851ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.25 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: ad5e6a3bd8d397c99510
+[1] Version: webpack 3.8.1
+[1] Time: 2682ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.66 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: ad5e6a3bd8d397c99510
+[1] Version: webpack 3.8.1
+[1] Time: 2641ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.66 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 3499b7cf0e5c19770a2b
+[0] Version: webpack 3.8.1
+[0] Time: 3177ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.66 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 9ca8c1cffff915c19659
+[0] Version: webpack 3.8.1
+[0] Time: 3279ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.66 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: c33a33ed2404684dc7bf
+[1] Version: webpack 3.8.1
+[1] Time: 3476ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.67 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: c33a33ed2404684dc7bf
+[1] Version: webpack 3.8.1
+[1] Time: 3536ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.67 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 2dc5640a60c4de39484c
+[0] Version: webpack 3.8.1
+[0] Time: 3586ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.67 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: f41882aa0b8801d973a5
+[0] Version: webpack 3.8.1
+[0] Time: 3989ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.67 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?0=%7B&1=%22&10=%7D&2=n&3=a&4=m&5=e&6=%22&7=:&8=3&9=9 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: ddb69fad76645cc7495e
+[1] Version: webpack 3.8.1
+[1] Time: 2350ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.65 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: ddb69fad76645cc7495e
+[1] Version: webpack 3.8.1
+[1] Time: 2375ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.65 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 1e4cde27fb39701e78a2
+[0] Version: webpack 3.8.1
+[0] Time: 2627ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.65 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 834fae1ad744c5fc5689
+[0] Version: webpack 3.8.1
+[0] Time: 2718ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.65 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=39 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=39 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=41 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=42 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 9e3b6e3ab1609b5b2535
+[1] Version: webpack 3.8.1
+[1] Time: 3455ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 9e3b6e3ab1609b5b2535
+[1] Version: webpack 3.8.1
+[1] Time: 3507ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: b9a0528bea22cdbd10c9
+[0] Version: webpack 3.8.1
+[0] Time: 3792ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: c33488ffdf3ea3867bf5
+[0] Version: webpack 3.8.1
+[0] Time: 3933ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=41 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 89f556f7cf32853df926
+[1] Version: webpack 3.8.1
+[1] Time: 2901ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 89f556f7cf32853df926
+[1] Version: webpack 3.8.1
+[1] Time: 3101ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 3ff19f0cd5ae3b7e1569
+[0] Version: webpack 3.8.1
+[0] Time: 3164ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: d98e0bb40c90b41dd70a
+[0] Version: webpack 3.8.1
+[0] Time: 3645ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: fbe716350957c852fe0f
+[1] Version: webpack 3.8.1
+[1] Time: 2830ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: fbe716350957c852fe0f
+[1] Version: webpack 3.8.1
+[1] Time: 2913ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: a2e32e3260dd291d711c
+[0] Version: webpack 3.8.1
+[0] Time: 3268ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 66bce044ebba6fa63879
+[0] Version: webpack 3.8.1
+[0] Time: 3383ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: a420b4d6f7ecc0958c04
+[1] Version: webpack 3.8.1
+[1] Time: 3371ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: a420b4d6f7ecc0958c04
+[1] Version: webpack 3.8.1
+[1] Time: 3520ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 84d93c173ba4cb17edea
+[0] Version: webpack 3.8.1
+[0] Time: 4009ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: a9ede5e9ba13a38ec510
+[0] Version: webpack 3.8.1
+[0] Time: 4137ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=39 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 8d569316eea2c4eb8fea
+[1] Version: webpack 3.8.1
+[1] Time: 3894ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 8d569316eea2c4eb8fea
+[1] Version: webpack 3.8.1
+[1] Time: 4163ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: af7c8d2dda73ae7e247e
+[0] Version: webpack 3.8.1
+[0] Time: 4324ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: eca03d6d1edabd7afb58
+[0] Version: webpack 3.8.1
+[0] Time: 4509ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[0] Hash: 46079a89bd619690073d
+[0] Version: webpack 3.8.1
+[0] Time: 3177ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.39 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[1] Hash: fb98bfc2cbc52c972c25
+[1] Version: webpack 3.8.1
+[1] Time: 3330ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.39 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: fb98bfc2cbc52c972c25
+[1] Version: webpack 3.8.1
+[1] Time: 3318ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.39 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 00fd198c72e05fa82d0e
+[0] Version: webpack 3.8.1
+[0] Time: 3688ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.39 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: bd4e7ee575df3b096d44
+[1] Version: webpack 3.8.1
+[1] Time: 3711ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: bd4e7ee575df3b096d44
+[1] Version: webpack 3.8.1
+[1] Time: 3722ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 3a807a36f102464a9c7c
+[0] Version: webpack 3.8.1
+[0] Time: 4166ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: fbc494ba9f205c09cd71
+[0] Version: webpack 3.8.1
+[0] Time: 4165ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=39 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 6cc41c38ede7d256a420
+[1] Version: webpack 3.8.1
+[1] Time: 2555ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 6cc41c38ede7d256a420
+[1] Version: webpack 3.8.1
+[1] Time: 2703ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 0ca101eea0a1a3d94613
+[0] Version: webpack 3.8.1
+[0] Time: 3076ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 1b1ebd3cd6a9edeef821
+[0] Version: webpack 3.8.1
+[0] Time: 3381ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.37 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: a5b60034dfe09287ed1a
+[1] Version: webpack 3.8.1
+[1] Time: 3294ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.38 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: a5b60034dfe09287ed1a
+[1] Version: webpack 3.8.1
+[1] Time: 3379ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.38 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 3d0739f1670fe4aef587
+[0] Version: webpack 3.8.1
+[0] Time: 3810ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.38 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 86ef54dd657c610069b8
+[0] Version: webpack 3.8.1
+[0] Time: 3908ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.38 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 1773fb9c0bae480f8134
+[1] Version: webpack 3.8.1
+[1] Time: 2855ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.55 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 1773fb9c0bae480f8134
+[1] Version: webpack 3.8.1
+[1] Time: 2986ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.55 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: c198f00eeb0dfd4081a6
+[0] Version: webpack 3.8.1
+[0] Time: 3127ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.55 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 31e7199666ca8176398c
+[0] Version: webpack 3.8.1
+[0] Time: 3313ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.55 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: e36e68bd3b43d63a9a43
+[1] Version: webpack 3.8.1
+[1] Time: 2438ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.56 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: e36e68bd3b43d63a9a43
+[1] Version: webpack 3.8.1
+[1] Time: 2482ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.56 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: ae4b22ac38a0c87ece7b
+[0] Version: webpack 3.8.1
+[0] Time: 2780ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.56 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: ef7cefdda90ed7f7495c
+[0] Version: webpack 3.8.1
+[0] Time: 2894ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.56 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: e9c099a87bae8fc512ac
+[1] Version: webpack 3.8.1
+[1] Time: 3711ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: e9c099a87bae8fc512ac
+[1] Version: webpack 3.8.1
+[1] Time: 3776ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 7c5edcf345d3a25cb5b4
+[0] Version: webpack 3.8.1
+[0] Time: 4517ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 668712c9cf0174894fdb
+[0] Version: webpack 3.8.1
+[0] Time: 4580ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: f9ff8751ddf6a6755416
+[1] Version: webpack 3.8.1
+[1] Time: 2891ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: f9ff8751ddf6a6755416
+[1] Version: webpack 3.8.1
+[1] Time: 3291ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 72f92375c3c480913eee
+[0] Version: webpack 3.8.1
+[0] Time: 3349ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 0c83f68ec8f11eab9a6b
+[0] Version: webpack 3.8.1
+[0] Time: 3513ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.54 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: a298d4f3c2e1222dbc73
+[1] Version: webpack 3.8.1
+[1] Time: 3319ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.65 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: a298d4f3c2e1222dbc73
+[1] Version: webpack 3.8.1
+[1] Time: 3359ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.65 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 15024d859adbc397347c
+[0] Version: webpack 3.8.1
+[0] Time: 3543ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.65 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: a1e385c51afa005e32fc
+[0] Version: webpack 3.8.1
+[0] Time: 3696ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.65 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 7b755af8a43445318778
+[1] Version: webpack 3.8.1
+[1] Time: 3006ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 7b755af8a43445318778
+[1] Version: webpack 3.8.1
+[1] Time: 3210ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: f6a6282dcc34e64d7260
+[0] Version: webpack 3.8.1
+[0] Time: 3390ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 6b45d0a8a3c699ba7bd2
+[0] Version: webpack 3.8.1
+[0] Time: 3885ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.31 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: d74aa2225b7ff2736db6
+[1] Version: webpack 3.8.1
+[1] Time: 2653ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: d74aa2225b7ff2736db6
+[1] Version: webpack 3.8.1
+[1] Time: 2737ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 3cb07f23f8b0d54defdd
+[0] Version: webpack 3.8.1
+[0] Time: 3083ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 8a622e75243ea53c90cf
+[0] Version: webpack 3.8.1
+[0] Time: 3147ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 9c45d6ea9a77b345585d
+[1] Version: webpack 3.8.1
+[1] Time: 3033ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 9c45d6ea9a77b345585d
+[1] Version: webpack 3.8.1
+[1] Time: 3197ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 1a1a20047757ec7f9047
+[0] Version: webpack 3.8.1
+[0] Time: 3408ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: bf5b688768567af3e883
+[0] Version: webpack 3.8.1
+[0] Time: 3628ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.29 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=40 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=42 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=44 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=45 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=47 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=48 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=49 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=46 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=45 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=44 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=43 -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=42 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=40 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=40 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: f0448a01fea9cbd61336
+[1] Version: webpack 3.8.1
+[1] Time: 3160ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: f0448a01fea9cbd61336
+[1] Version: webpack 3.8.1
+[1] Time: 3178ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 22ebf48b30e85cc8b1d3
+[0] Version: webpack 3.8.1
+[0] Time: 3477ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: fda8f60e6962c90d4517
+[0] Version: webpack 3.8.1
+[0] Time: 3470ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[0] Hash: 504d0e1e5e7c140de7eb
+[0] Version: webpack 3.8.1
+[0] Time: 4616ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[1] Hash: 79c4ad46e49cf843c432
+[1] Version: webpack 3.8.1
+[1] Time: 4454ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 79c4ad46e49cf843c432
+[1] Version: webpack 3.8.1
+[1] Time: 4462ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 50bad8399a7f10378229
+[0] Version: webpack 3.8.1
+[0] Time: 4924ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 92660841328742d5e164
+[1] Version: webpack 3.8.1
+[1] Time: 3173ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 92660841328742d5e164
+[1] Version: webpack 3.8.1
+[1] Time: 3325ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 7aaa1af1ea8959d8f46c
+[0] Version: webpack 3.8.1
+[0] Time: 3556ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: a7d3c6ff2818af95d019
+[0] Version: webpack 3.8.1
+[0] Time: 3901ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 89d7d9b1f7a189569317
+[1] Version: webpack 3.8.1
+[1] Time: 3457ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 89d7d9b1f7a189569317
+[1] Version: webpack 3.8.1
+[1] Time: 3718ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 565d369ebaab519b6b51
+[0] Version: webpack 3.8.1
+[0] Time: 4146ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: b2aafc1246cdef0f21fb
+[0] Version: webpack 3.8.1
+[0] Time: 4195ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 9ea5f75b274d1c22d09c
+[1] Version: webpack 3.8.1
+[1] Time: 4127ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.72 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 9ea5f75b274d1c22d09c
+[1] Version: webpack 3.8.1
+[1] Time: 4261ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.72 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: ae55721d400968a84ea1
+[0] Version: webpack 3.8.1
+[0] Time: 4435ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.72 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 86fff9b7f05fe2f217e4
+[0] Version: webpack 3.8.1
+[0] Time: 4662ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.72 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 4684ebe61d40e33699ed
+[1] Version: webpack 3.8.1
+[1] Time: 4124ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 4684ebe61d40e33699ed
+[1] Version: webpack 3.8.1
+[1] Time: 4372ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: f226124e22682b168d8e
+[0] Version: webpack 3.8.1
+[0] Time: 4827ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: f971fa506086ff1a2c3b
+[0] Version: webpack 3.8.1
+[0] Time: 4814ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 500f785e25906c1f6408
+[1] Version: webpack 3.8.1
+[1] Time: 3146ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: fb0b784390d469dfac23
+[0] Version: webpack 3.8.1
+[0] Time: 3806ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] Hash: 089f435284aaa93293de
+[0] Version: webpack 3.8.1
+[0] Time: 3823ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[1] Hash: 500f785e25906c1f6408
+[1] Version: webpack 3.8.1
+[1] Time: 5050ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: a3b2b6f38c6cae1c2224
+[0] Version: webpack 3.8.1
+[0] Time: 5980ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[1] Hash: 6813cbb3ae894c7f07a9
+[1] Version: webpack 3.8.1
+[1] Time: 9024ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 8f3ea0c844ce9bf08680
+[0] Version: webpack 3.8.1
+[0] Time: 6064ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[1] Hash: 6813cbb3ae894c7f07a9
+[1] Version: webpack 3.8.1
+[1] Time: 14982ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.73 kB {0} [built]
+[1]     + 21 hidden modules
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 89d7d9b1f7a189569317
+[1] Version: webpack 3.8.1
+[1] Time: 3990ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 89d7d9b1f7a189569317
+[1] Version: webpack 3.8.1
+[1] Time: 3964ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 565d369ebaab519b6b51
+[0] Version: webpack 3.8.1
+[0] Time: 4574ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: b2aafc1246cdef0f21fb
+[0] Version: webpack 3.8.1
+[0] Time: 4598ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: a83ac9f68fc918eb7582
+[1] Version: webpack 3.8.1
+[1] Time: 3542ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.66 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: a83ac9f68fc918eb7582
+[1] Version: webpack 3.8.1
+[1] Time: 3664ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.66 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 64ddef4413b0c9fb82f4
+[0] Version: webpack 3.8.1
+[0] Time: 4282ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.66 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 6c148434215230c6d286
+[0] Version: webpack 3.8.1
+[0] Time: 4323ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.66 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 6e68a174ec2b39c14450
+[1] Version: webpack 3.8.1
+[1] Time: 3708ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.67 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 6e68a174ec2b39c14450
+[1] Version: webpack 3.8.1
+[1] Time: 3626ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.67 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 2c2195c454ae2ad6d466
+[0] Version: webpack 3.8.1
+[0] Time: 3994ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.67 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: e5fc16c31861a2ac2e02
+[0] Version: webpack 3.8.1
+[0] Time: 4481ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.67 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 1deb1f220ce3ea60a66d
+[1] Version: webpack 3.8.1
+[1] Time: 3050ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 1deb1f220ce3ea60a66d
+[1] Version: webpack 3.8.1
+[1] Time: 3217ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: cc1ab09955971b88cb38
+[0] Version: webpack 3.8.1
+[0] Time: 3406ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: ea60ca3e715bff32f51a
+[0] Version: webpack 3.8.1
+[0] Time: 3562ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 0b3391f0a560eb014018
+[1] Version: webpack 3.8.1
+[1] Time: 3261ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 0b3391f0a560eb014018
+[1] Version: webpack 3.8.1
+[1] Time: 3422ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 26db552ea3e6054536eb
+[0] Version: webpack 3.8.1
+[0] Time: 3869ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 337d988c8b1feb33389e
+[0] Version: webpack 3.8.1
+[0] Time: 3980ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.63 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 4e757eb28142f8bc9d50
+[1] Version: webpack 3.8.1
+[1] Time: 3062ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 4e757eb28142f8bc9d50
+[1] Version: webpack 3.8.1
+[1] Time: 3095ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 07270b4ba06ebf9e633b
+[0] Version: webpack 3.8.1
+[0] Time: 3196ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 8b2d407c5f322b43e17e
+[0] Version: webpack 3.8.1
+[0] Time: 3384ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.64 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=ai-projnmbvmnvb -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=bvxcai-proj -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 108ef785581a79be4432
+[1] Version: webpack 3.8.1
+[1] Time: 3938ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.82 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 108ef785581a79be4432
+[1] Version: webpack 3.8.1
+[1] Time: 4041ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.82 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: ea19195f806548d17a65
+[0] Version: webpack 3.8.1
+[0] Time: 4172ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.82 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 042e93a65f87907f87ed
+[0] Version: webpack 3.8.1
+[0] Time: 4430ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.82 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: e10c45afde646a2c2f23
+[1] Version: webpack 3.8.1
+[1] Time: 2860ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: e10c45afde646a2c2f23
+[1] Version: webpack 3.8.1
+[1] Time: 2908ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 806406b2b1c0d53c05a6
+[0] Version: webpack 3.8.1
+[0] Time: 3441ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: f8d1d3d32471ebb80627
+[0] Version: webpack 3.8.1
+[0] Time: 3614ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 85a78a3241ec603c93ad
+[1] Version: webpack 3.8.1
+[1] Time: 3002ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 85a78a3241ec603c93ad
+[1] Version: webpack 3.8.1
+[1] Time: 3014ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 1bc9aae6a96250023f5d
+[0] Version: webpack 3.8.1
+[0] Time: 3287ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 5598684dd1cc9935c915
+[0] Version: webpack 3.8.1
+[0] Time: 3523ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.83 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: acd53bf76f202ce91c54
+[1] Version: webpack 3.8.1
+[1] Time: 3785ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.77 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: acd53bf76f202ce91c54
+[1] Version: webpack 3.8.1
+[1] Time: 4112ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.77 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 79398002494e6d522e66
+[0] Version: webpack 3.8.1
+[0] Time: 4379ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.77 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 691de11a482aba66be74
+[0] Version: webpack 3.8.1
+[0] Time: 4551ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.77 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 18214b2b71aae9db541d
+[1] Version: webpack 3.8.1
+[1] Time: 3926ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.85 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 18214b2b71aae9db541d
+[1] Version: webpack 3.8.1
+[1] Time: 3999ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.85 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: d2d9c68ed67adcb5a59d
+[0] Version: webpack 3.8.1
+[0] Time: 4208ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.85 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 5d1236876e49d1b82d93
+[0] Version: webpack 3.8.1
+[0] Time: 4219ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.85 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 226bb4df72aeea8e1544
+[1] Version: webpack 3.8.1
+[1] Time: 2972ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.91 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 226bb4df72aeea8e1544
+[1] Version: webpack 3.8.1
+[1] Time: 3200ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.91 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: ead2858b5a038ae42afc
+[0] Version: webpack 3.8.1
+[0] Time: 3509ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.91 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 2b899de4b89c78505045
+[0] Version: webpack 3.8.1
+[0] Time: 3686ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.91 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 0ef6fd60c9f2c5f717de
+[1] Version: webpack 3.8.1
+[1] Time: 2486ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 0ef6fd60c9f2c5f717de
+[1] Version: webpack 3.8.1
+[1] Time: 2497ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 032d0b34c88fb23727f0
+[0] Version: webpack 3.8.1
+[0] Time: 2853ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 428b34bda2153b72d958
+[0] Version: webpack 3.8.1
+[0] Time: 3075ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 976de48577e650ed5b8f
+[1] Version: webpack 3.8.1
+[1] Time: 2608ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 976de48577e650ed5b8f
+[1] Version: webpack 3.8.1
+[1] Time: 2841ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: c7faac303346906ea838
+[0] Version: webpack 3.8.1
+[0] Time: 3119ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 420df0f155e1858e485f
+[0] Version: webpack 3.8.1
+[0] Time: 3182ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.9 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: d9c0681d22acbab03c9c
+[1] Version: webpack 3.8.1
+[1] Time: 2788ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.93 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: d9c0681d22acbab03c9c
+[1] Version: webpack 3.8.1
+[1] Time: 3281ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 2.93 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: c2e82f4662d65c6c2810
+[0] Version: webpack 3.8.1
+[0] Time: 3330ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.93 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: c0ae09a243a858457dc0
+[0] Version: webpack 3.8.1
+[0] Time: 3849ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 2.93 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 29fc9c1cee40a57a7290
+[1] Version: webpack 3.8.1
+[1] Time: 3413ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.11 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 29fc9c1cee40a57a7290
+[1] Version: webpack 3.8.1
+[1] Time: 3497ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.11 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 5fa72689555ad60e3518
+[0] Version: webpack 3.8.1
+[0] Time: 3827ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.11 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: fa1baed7280766a1d0cc
+[0] Version: webpack 3.8.1
+[0] Time: 4167ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.11 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: a7004e4b902746e0aa7c
+[1] Version: webpack 3.8.1
+[1] Time: 2752ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: a7004e4b902746e0aa7c
+[1] Version: webpack 3.8.1
+[1] Time: 2893ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: dae58fad6f58e378ad88
+[0] Version: webpack 3.8.1
+[0] Time: 3024ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 5d5e33e867a97392956b
+[0] Version: webpack 3.8.1
+[0] Time: 3300ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: e0dc065ab68670dd3862
+[1] Version: webpack 3.8.1
+[1] Time: 3825ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: e0dc065ab68670dd3862
+[1] Version: webpack 3.8.1
+[1] Time: 3977ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: e3aab43c3e57731f0fb8
+[0] Version: webpack 3.8.1
+[0] Time: 4397ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 86e1c9114ab9e83e5fc3
+[0] Version: webpack 3.8.1
+[0] Time: 4594ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 24232b96114cd7e5e7ea
+[1] Version: webpack 3.8.1
+[1] Time: 2644ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 24232b96114cd7e5e7ea
+[1] Version: webpack 3.8.1
+[1] Time: 2798ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 498cc7760f79139b274b
+[0] Version: webpack 3.8.1
+[0] Time: 3146ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 9391f2c574f2c9c782b2
+[0] Version: webpack 3.8.1
+[0] Time: 3221ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 088ab3b1db818faec16a
+[1] Version: webpack 3.8.1
+[1] Time: 3552ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 088ab3b1db818faec16a
+[1] Version: webpack 3.8.1
+[1] Time: 3689ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: a6b7a07dcf10901e5096
+[0] Version: webpack 3.8.1
+[0] Time: 3892ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 83e502f4c37c24e47a42
+[0] Version: webpack 3.8.1
+[0] Time: 4166ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 2e968d62205a9656484e
+[1] Version: webpack 3.8.1
+[1] Time: 2956ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 2e968d62205a9656484e
+[1] Version: webpack 3.8.1
+[1] Time: 3151ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 503557036bcb46ae1918
+[0] Version: webpack 3.8.1
+[0] Time: 3381ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: bc4d9c9d7be944420491
+[0] Version: webpack 3.8.1
+[0] Time: 3473ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.19 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 7914f2a7a52333baed6d
+[1] Version: webpack 3.8.1
+[1] Time: 3807ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.21 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 7914f2a7a52333baed6d
+[1] Version: webpack 3.8.1
+[1] Time: 4233ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.21 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 4df184ba898654f6ac0e
+[0] Version: webpack 3.8.1
+[0] Time: 4278ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.21 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 81adc5ea2a6afc91895b
+[0] Version: webpack 3.8.1
+[0] Time: 4478ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.21 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 76e6325418c272ad9ae8
+[1] Version: webpack 3.8.1
+[1] Time: 3378ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.23 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 76e6325418c272ad9ae8
+[1] Version: webpack 3.8.1
+[1] Time: 3552ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.23 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 4566fc25bdab710ff978
+[0] Version: webpack 3.8.1
+[0] Time: 3861ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.23 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 2315834e52e955bcdbc9
+[0] Version: webpack 3.8.1
+[0] Time: 4061ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.23 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: c91edddf82986ed7b3b2
+[1] Version: webpack 3.8.1
+[1] Time: 2702ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: c91edddf82986ed7b3b2
+[1] Version: webpack 3.8.1
+[1] Time: 3004ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 810b0b591e852a95f949
+[0] Version: webpack 3.8.1
+[0] Time: 3378ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 17ee9af6f79412d30413
+[0] Version: webpack 3.8.1
+[0] Time: 3721ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 586c7dd0262934ec82ed
+[1] Version: webpack 3.8.1
+[1] Time: 3267ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 586c7dd0262934ec82ed
+[1] Version: webpack 3.8.1
+[1] Time: 3499ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 047c5be2854e7ff8e8fd
+[0] Version: webpack 3.8.1
+[0] Time: 3818ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 73a8c61577313d033a1f
+[0] Version: webpack 3.8.1
+[0] Time: 3993ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 95852c0a186774bee34f
+[1] Version: webpack 3.8.1
+[1] Time: 3637ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 95852c0a186774bee34f
+[1] Version: webpack 3.8.1
+[1] Time: 3572ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 0d33067ce86ff1eeb438
+[0] Version: webpack 3.8.1
+[0] Time: 3890ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 4ab34ba852a3305ed807
+[0] Version: webpack 3.8.1
+[0] Time: 4146ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: e4d7d84fc9fbe7cb00cd
+[1] Version: webpack 3.8.1
+[1] Time: 3481ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.79 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: e4d7d84fc9fbe7cb00cd
+[1] Version: webpack 3.8.1
+[1] Time: 4075ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.79 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: a1d284ffdfce9320b8fe
+[0] Version: webpack 3.8.1
+[0] Time: 4172ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.79 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: b4fab42021c7e6d5e7a0
+[0] Version: webpack 3.8.1
+[0] Time: 4664ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.79 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 02bd37568aa887364064
+[1] Version: webpack 3.8.1
+[1] Time: 2627ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 02bd37568aa887364064
+[1] Version: webpack 3.8.1
+[1] Time: 3217ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 6320819a9501cb383549
+[0] Version: webpack 3.8.1
+[0] Time: 3687ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 03d4409e35517c5fa471
+[0] Version: webpack 3.8.1
+[0] Time: 4034ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 02698ce6e3e226e35917
+[1] Version: webpack 3.8.1
+[1] Time: 3389ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.78 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 02698ce6e3e226e35917
+[1] Version: webpack 3.8.1
+[1] Time: 3437ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.78 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 151fdbd7cae1b91c91c0
+[0] Version: webpack 3.8.1
+[0] Time: 3711ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.78 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 00db5b718818d99cf4f8
+[0] Version: webpack 3.8.1
+[0] Time: 3754ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.78 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 291ea3c4300297fbe391
+[1] Version: webpack 3.8.1
+[1] Time: 3134ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 291ea3c4300297fbe391
+[1] Version: webpack 3.8.1
+[1] Time: 3221ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: bc74793f989404a25e01
+[0] Version: webpack 3.8.1
+[0] Time: 3784ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 04558396a26a93483d52
+[0] Version: webpack 3.8.1
+[0] Time: 3863ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.05 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 3a7c674661128f82a2af
+[1] Version: webpack 3.8.1
+[1] Time: 2736ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 3a7c674661128f82a2af
+[1] Version: webpack 3.8.1
+[1] Time: 2907ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: d10a5dae7141311d1eea
+[0] Version: webpack 3.8.1
+[0] Time: 3176ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: dfbf4ab075030f0a3e1b
+[0] Version: webpack 3.8.1
+[0] Time: 3217ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: fd639ed04f8b292f25c5
+[1] Version: webpack 3.8.1
+[1] Time: 2839ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: fd639ed04f8b292f25c5
+[1] Version: webpack 3.8.1
+[1] Time: 2913ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: b0b23b8bf8d77d1a0ef4
+[0] Version: webpack 3.8.1
+[0] Time: 3119ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: dfb883932db360d1142d
+[0] Version: webpack 3.8.1
+[0] Time: 3278ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 250e197f358eeb2c1419
+[1] Version: webpack 3.8.1
+[1] Time: 4051ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 250e197f358eeb2c1419
+[1] Version: webpack 3.8.1
+[1] Time: 4212ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 9c93bf01cffe5a9acc20
+[0] Version: webpack 3.8.1
+[0] Time: 4407ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: f789cf93b38b68ff0567
+[0] Version: webpack 3.8.1
+[0] Time: 4912ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.09 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 0eac3ffe037a9b65feea
+[1] Version: webpack 3.8.1
+[1] Time: 2631ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.1 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 0eac3ffe037a9b65feea
+[1] Version: webpack 3.8.1
+[1] Time: 3093ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.1 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: a6f87d4810e14efecdf7
+[0] Version: webpack 3.8.1
+[0] Time: 3566ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.1 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 51b962046f3b07bcf745
+[0] Version: webpack 3.8.1
+[0] Time: 3776ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.1 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: fd639ed04f8b292f25c5
+[1] Version: webpack 3.8.1
+[1] Time: 2824ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: fd639ed04f8b292f25c5
+[1] Version: webpack 3.8.1
+[1] Time: 2897ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: b0b23b8bf8d77d1a0ef4
+[0] Version: webpack 3.8.1
+[0] Time: 3369ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: dfb883932db360d1142d
+[0] Version: webpack 3.8.1
+[0] Time: 3756ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 8dbeffd489ebae4b4e13
+[1] Version: webpack 3.8.1
+[1] Time: 2867ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[1]     + 21 hidden modules
+[1] Hash: 8dbeffd489ebae4b4e13
+[1] Version: webpack 3.8.1
+[1] Time: 3096ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: f475b5ce4418efb05a66
+[0] Version: webpack 3.8.1
+[0] Time: 3192ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] Hash: 96adfb2065944624a8fd
+[0] Version: webpack 3.8.1
+[0] Time: 3471ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] webpack: Compiling...
+[1] Hash: 6c3c4fb88e21a4b7e8a3
+[1] Version: webpack 3.8.1
+[1] Time: 3105ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 5841bdbc62ae087ed0f7
+[0] Version: webpack 3.8.1
+[0] Time: 3258ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[1] Hash: 6c3c4fb88e21a4b7e8a3
+[1] Version: webpack 3.8.1
+[1] Time: 3357ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 95ddd9e05c06f55ae241
+[0] Version: webpack 3.8.1
+[0] Time: 3479ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[1] webpack --watch exited with code null
+[0] webpack-dev-server exited with code null
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/validate_token from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[1] Hash: d8c88d3f0fc3c5bfc1f1
+[1] Version: webpack 3.8.1
+[1] Time: 3353ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: c6d6f6c7520d03275f1f
+[0] Version: webpack 3.8.1
+[0] Time: 3723ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[0] Hash: c6d6f6c7520d03275f1f
+[0] Version: webpack 3.8.1
+[0] Time: 303ms
+[0]  1 asset
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] webpack: Compiling...
+[0] Hash: c6d6f6c7520d03275f1f
+[0] Version: webpack 3.8.1
+[0] Time: 263ms
+[0]  1 asset
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.81 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] POST /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[1] Hash: 6c3c4fb88e21a4b7e8a3
+[1] Version: webpack 3.8.1
+[1] Time: 3323ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 95ddd9e05c06f55ae241
+[0] Version: webpack 3.8.1
+[0] Time: 3751ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[1] Hash: 1e6ea4e80621a4f5ee57
+[1] Version: webpack 3.8.1
+[1] Time: 3937ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.79 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: eecfd2d0e1fd490751b4
+[0] Version: webpack 3.8.1
+[0] Time: 4164ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.79 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] webpack: Compiling...
+[1] Hash: 6c3c4fb88e21a4b7e8a3
+[1] Version: webpack 3.8.1
+[1] Time: 3645ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: 95ddd9e05c06f55ae241
+[0] Version: webpack 3.8.1
+[0] Time: 4349ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [40] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] PATCH /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] DELETE /api/projects?name=39 -> http://localhost:3000
+[0] webpack: Compiling...
+[1] Hash: 1e4add9f5b138b49c223
+[1] Version: webpack 3.8.1
+[1] Time: 6342ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]     + 21 hidden modules
+[0] Hash: fa234088ad70e394990a
+[0] Version: webpack 3.8.1
+[0] Time: 6653ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [37] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[0]     + 45 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] GET /api/projects -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+[0] [HPM] GET /api/tasks?project=39 -> http://localhost:3000
+                                                                                                                                                                                  yarn run v1.2.1
+$ concurrently 'webpack-dev-server' 'webpack --watch'
+[1] 
+[1] Webpack is watching the files…
+[1] 
+[0] [HPM] Proxy created: /api  ->  http://localhost:3000
+[0] [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
+[0] Project is running at http://localhost:8080/
+[0] webpack output is served from /
+[1] Hash: 1e4add9f5b138b49c223
+[1] Version: webpack 3.8.1
+[1] Time: 9458ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]    [2] ./app/app.module.js 3.31 kB {0} [built]
+[1]    [9] ./app/login/login.controller.js 671 bytes {0} [built]
+[1]   [10] ./app/register/register.controller.js 662 bytes {0} [built]
+[1]   [11] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]   [13] ./app/projects/projects.routes.js 571 bytes {0} [built]
+[1]   [14] ./app/projects/projects.directive.js 619 bytes {0} [built]
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]   [16] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[1]   [17] ./app/tasks/tasks.controller.js 1.61 kB {0} [built]
+[1]   [18] ./app/tasks/tasks.routes.js 571 bytes {0} [built]
+[1]   [19] ./app/tasks/tasks.directive.js 552 bytes {0} [built]
+[1]   [20] ./app/tasks/tasks.service.js 1.19 kB {0} [built]
+[1]   [21] ./app/app.routes.js 870 bytes {0} [built]
+[1]     + 8 hidden modules
+[0] Hash: fa234088ad70e394990a
+[0] Version: webpack 3.8.1
+[0] Time: 7502ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]    [0] ./node_modules/angular/index.js 48 bytes {0} [built]
+[0]    [4] multi (webpack)-dev-server/client?http://localhost:8080 ./app/app.module.js 40 bytes {0} [built]
+[0]    [5] (webpack)-dev-server/client?http://localhost:8080 7.95 kB {0} [built]
+[0]    [6] ./node_modules/url/url.js 23.3 kB {0} [built]
+[0]   [13] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [25] (webpack)/hot/emitter.js 75 bytes {0} [built]
+[0]   [27] ./app/app.module.js 3.31 kB {0} [built]
+[0]   [29] ./node_modules/angular-animate/index.js 60 bytes {0} [built]
+[0]   [31] ./node_modules/angular-cookie/index.js 58 bytes {0} [built]
+[0]   [33] ./node_modules/ng-token-auth/dist/ng-token-auth.js 36.4 kB {0} [built]
+[0]   [34] ./app/login/login.controller.js 671 bytes {0} [built]
+[0]   [35] ./app/register/register.controller.js 662 bytes {0} [built]
+[0]   [36] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[0]   [41] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[0]     + 32 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] GET /api/auth/validate_token -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/validate_token from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+yarn run v1.2.1
+$ concurrently 'webpack-dev-server' 'webpack --watch'
+[1] 
+[1] Webpack is watching the files…
+[1] 
+[0] [HPM] Proxy created: /api  ->  http://localhost:3000
+[0] [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
+[0] Project is running at http://localhost:8080/
+[0] webpack output is served from /
+[1] Hash: 1e4add9f5b138b49c223
+[1] Version: webpack 3.8.1
+[1] Time: 5636ms
+[1]     Asset     Size  Chunks                    Chunk Names
+[1] bundle.js  4.28 MB       0  [emitted]  [big]  main
+[1]    [2] ./app/app.module.js 3.31 kB {0} [built]
+[1]    [9] ./app/login/login.controller.js 671 bytes {0} [built]
+[1]   [10] ./app/register/register.controller.js 662 bytes {0} [built]
+[1]   [11] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[1]   [12] ./app/projects/projects.controller.js 3.04 kB {0} [built]
+[1]   [13] ./app/projects/projects.routes.js 571 bytes {0} [built]
+[1]   [14] ./app/projects/projects.directive.js 619 bytes {0} [built]
+[1]   [15] ./app/projects/projects.service.js 1.8 kB {0} [built]
+[1]   [16] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[1]   [17] ./app/tasks/tasks.controller.js 1.61 kB {0} [built]
+[1]   [18] ./app/tasks/tasks.routes.js 571 bytes {0} [built]
+[1]   [19] ./app/tasks/tasks.directive.js 552 bytes {0} [built]
+[1]   [20] ./app/tasks/tasks.service.js 1.19 kB {0} [built]
+[1]   [21] ./app/app.routes.js 870 bytes {0} [built]
+[1]     + 8 hidden modules
+[0] Hash: fa234088ad70e394990a
+[0] Version: webpack 3.8.1
+[0] Time: 6788ms
+[0]     Asset     Size  Chunks                    Chunk Names
+[0] bundle.js  5.11 MB       0  [emitted]  [big]  main
+[0]    [0] ./node_modules/angular/index.js 48 bytes {0} [built]
+[0]    [4] multi (webpack)-dev-server/client?http://localhost:8080 ./app/app.module.js 40 bytes {0} [built]
+[0]    [5] (webpack)-dev-server/client?http://localhost:8080 7.95 kB {0} [built]
+[0]    [6] ./node_modules/url/url.js 23.3 kB {0} [built]
+[0]   [13] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+[0]   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+[0]   [25] (webpack)/hot/emitter.js 75 bytes {0} [built]
+[0]   [27] ./app/app.module.js 3.31 kB {0} [built]
+[0]   [29] ./node_modules/angular-animate/index.js 60 bytes {0} [built]
+[0]   [31] ./node_modules/angular-cookie/index.js 58 bytes {0} [built]
+[0]   [33] ./node_modules/ng-token-auth/dist/ng-token-auth.js 36.4 kB {0} [built]
+[0]   [34] ./app/login/login.controller.js 671 bytes {0} [built]
+[0]   [35] ./app/register/register.controller.js 662 bytes {0} [built]
+[0]   [36] ./app/projects/projects.module.js 1.09 kB {0} [built]
+[0]   [41] ./app/tasks/tasks.module.js 1.02 kB {0} [built]
+[0]     + 32 hidden modules
+[0] webpack: Compiled successfully.
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+error Command failed with signal "SIGKILL".
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+[0] [HPM] POST /api/auth/sign_in -> http://localhost:3000
+[0] [HPM] Error occurred while trying to proxy request /api/auth/sign_in from localhost:8080 to http://localhost:3000 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+[1] webpack --watch exited with code null
+[0] webpack-dev-server exited with code null

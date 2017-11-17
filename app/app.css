@@ -1,0 +1,150 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+.card-block {
+  padding: 0;
+}
+.card-block .card {
+  border-width: 0px;
+}
+
+small {
+  font-size: 60%;
+}
+.list-group-item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 57px;
+}
+
+.task-line {
+  width: 75%;
+  padding-left: 2%;
+}
+
+.task-cross {
+  text-decoration: line-through;
+}
+
+.fa {
+  margin-top: 5px;
+}
+.fa-sign-out {
+  color: darkgrey;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.proj-container{
+  width: 70%;
+  margin: 10% auto;
+}
+
+.card-header > span {
+  cursor:pointer;
+  padding-left: 10px;
+}
+
+.panel_edit{
+  float: right;
+  visibility: hidden;
+  cursor:pointer;
+  z-index:999;
+}
+.card-header:hover > .panel_edit{
+  visibility: visible;
+}
+.list-group-item:hover > .panel_edit{
+  visibility: visible;
+}
+.list-group-item:hover > .sort_arrows{
+  visibility: visible;
+}
+ul < .list-group-item {
+  padding-left: 40px;
+}
+.sort_arrows{
+  visibility: hidden;
+  cursor:pointer;
+  width: 15px;
+  height: 50px;
+  float: right;
+  position: relative;
+  margin-right: 15px;
+}
+
+.file_upload{
+    position: relative;
+  z-index: 9999;
+  float: right;
+  right: 15px;
+  bottom: 55px;
+}
+
+.modal-footer {
+  display: block;
+}
+
+.modal-footer > .header {
+  color: grey;
+  font-size: 10pt;
+}
+
+.modal-footer > .header > .fa {
+    padding-left: 10px;
+    font-size: 15pt;
+  }
+
+.comment_file > .home-icon-img {
+
+}
+
+.moment-picker {
+  z-index: 99999;
+}
+
+.has-error{
+  border-color: red;
+}
+
+span[aria-expanded="true"] i:before{
+  content: "\f078";
+}
+span[aria-expanded="false"] i:before{
+  content: "\f054";
+}
