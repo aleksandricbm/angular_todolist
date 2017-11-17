@@ -21,6 +21,7 @@ export default class TasksCtrl{
     this.service.createTaskAPI(task, proj)
       .then(function(response){
         this.tasks.push(response.data);
+        this.$scope.tasknew = "";
       }.bind(this));
   }
 

@@ -77,7 +77,4 @@ angular.module('app', [
 	})
   .run(function($rootScope, $state, Flash){
     Flash.clear();
-    // $rootScope.$on('auth:logout-success', function(ev) {
-    //   $state.go('login');
-    // });
   });

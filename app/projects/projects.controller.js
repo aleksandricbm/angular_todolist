@@ -13,6 +13,7 @@ export default class ProjectsCtrl{
     this.service.createProjectAPI(projname)
       .then(function(response) {
         this.projects.push (response.data);
+        this.$scope.projectnew = "";
       }.bind(this))
       .catch(function(response){
         this.Flash.create('danger', response.data.name);
