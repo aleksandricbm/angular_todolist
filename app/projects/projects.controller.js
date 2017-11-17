@@ -15,7 +15,7 @@ export default class ProjectsCtrl{
         this.projects.push (response.data);
       }.bind(this))
       .catch(function(response){
-        this.Flash.create('danger', response.data.uniques_project);
+        this.Flash.create('danger', response.data.name);
       }.bind(this))
   }
 

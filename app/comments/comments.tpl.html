@@ -12,6 +12,7 @@
       <!-- Modal body -->
       <div class="modal-body">
         <form name="newCommentForm" ng-submit="comctrl.saveCommentForm(comctrl.form, newCommentForm)" role="form">
+          <flash-message show-close="false"></flash-message>
           <div class="form-group">
             <textarea class="form-control" ng-model="comctrl.form.comment" rows="3" placeholder="Enter Your Comment"></textarea>
           </div>

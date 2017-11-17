@@ -18,7 +18,7 @@
         <small class="text-muted" ng-class="tsk.checkDate(task.deadline) ? 'text-success' : 'text-danger' " ng-show="!task.completed">{{ task.deadline | date: 'dd/MM/yyyy HH:mm' }} </small>
       </div>
       <div class="panel_edit" style="z-index:999" ng-hide="showedttask">
-        <span class="badge badge-default" ng-if="task.comments_qty > 0 ">{{task.comments_qty}}</span>
+        <span class="badge badge-default" ng-if="task.comments_count > 0 ">{{task.comments_count}}</span>
         <span>
           <i class="fa fa-comment" aria-hidden="true" ng-click="tsk.show[task.id]=true"></i>
         </span>

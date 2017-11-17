@@ -1,9 +1,10 @@
 export default class CommentsCtrl{
-  constructor($scope, $http, CommentsService, Upload){
+  constructor($scope, $http, CommentsService, Upload, Flash){
     this.comments = [];
     this.service = CommentsService;
     this.$scope = $scope;
     this.Upload = Upload;
+    this.Flash = Flash;
     this.form = {};
   }
 
@@ -20,8 +21,11 @@ export default class CommentsCtrl{
       this.service.createCommentAPI(params)
         .then(function(response){
           this.comments.push(response.data);
-          this.$scope.task.comments_qty+=1;
-        }.bind(this));
+          this.$scope.task.comments_count+=1;
+        }.bind(this))
+        .catch(function(response){
+        this.Flash.create('danger', response.data.comment);
+      }.bind(this));
     }.bind(this));
   }
 
@@ -38,7 +42,7 @@ export default class CommentsCtrl{
         this.comments = this.comments.filter(function( obj ) {
             return obj.id !== comment.id;
         });
-        this.$scope.task.comments_qty-=1;
+        this.$scope.task.comments_count-=1;
       }.bind(this));
   }
   closeModalComment(){
